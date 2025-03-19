@@ -823,14 +823,22 @@ const sidebars: SidebarsConfig = {
                       type: "category",
                       label: "Methods",
                       items: [
+                        "introduction/pro-version/document/methods/clearDocumentTextSearch",
+                        "introduction/pro-version/document/methods/documentTextSearch",
                         "introduction/pro-version/document/methods/endGetTextRects",
+                        "introduction/pro-version/document/methods/markupTextWithOrange",
+                        "introduction/pro-version/document/methods/movePageTo",
+                        "introduction/pro-version/document/methods/removePage",
+                        
                       ],
                     },
                     {
                       type: "category",
                       label: "Callback Events",
                       items: [
+                        "introduction/pro-version/document/callbacks/GUI_DocumentSearch",
                         "introduction/pro-version/document/callbacks/GUI_NumMatchesRect",
+                        "introduction/pro-version/document/callbacks/GUI_PageCountChanged",
                       ],
                     },
                   ],

@@ -4,6 +4,7 @@ Terminates the operation started with `getTextRects` and resets values.
 
 ```typescript
 RxCore.endGetTextRects()
+// Terminates operation started with RxCore.getTextRects
 ```
 
 ### Parameters
@@ -14,9 +15,3 @@ RxCore.endGetTextRects()
 
 - **NA** — This method does not return a value.
 
-### Example
-
-```typescript
-RxCore.endGetTextRects();
-// Terminates operation started with RxCore.getTextRects
-```
