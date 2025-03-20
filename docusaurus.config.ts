@@ -85,9 +85,16 @@ const config: Config = {
           type: "docSidebar",
           sidebarId: "rxSDKSidebar",
           position: "left",
-          label: "RxSDK for Windows",
+          label: "Rasterex Server SDK",
 
-        }
+        },
+        {
+          type: "docSidebar",
+          label: "Rasterex REST API",
+          position: "left",
+          sidebarId: "rxRESTAPI",
+        },
+
       ],
     },
     footer: {

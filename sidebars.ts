@@ -1008,12 +1008,84 @@ const sidebars: SidebarsConfig = {
   rxSDKSidebar: [
     {
       type: "category",
-      label: "RxSDK for Windows",
+      label: "Rasterex Server SDK",
       items: [
-        "RxSDK_for_Windows/RxSDK_for_Windows_release22",
+        // "RxSDK_for_Server/RxSDK_for_Server_release22",
+        {
+          type: "category",
+          label: "RxCore",
+          items: [
+            "RxSDK_for_Server/RxCore/generalInformation",
+            "RxSDK_for_Server/RxCore/theRxEngineObject",
+            "RxSDK_for_Server/RxCore/theRxDocObject",
+            "RxSDK_for_Server/RxCore/theRxConfigCOMObject",
+            "RxSDK_for_Server/RxCore/theRxTextObject",
+            "RxSDK_for_Server/RxCore/appendixes",
+          ],
+        },
+        {
+          type: "category",
+          label: "RxDisplay",
+          items: [
+            "RxSDK_for_Server/RxDisplay/generalInformation",
+            "RxSDK_for_Server/RxDisplay/theRxDisplayObject",
+            "RxSDK_for_Server/RxDisplay/theRxDisplay3dObject",
+            "RxSDK_for_Server/RxDisplay/appendixes",
+          ],
+        },
+        {
+          type: "category",
+          label: "RxMarkup",
+          items: [
+            "RxSDK_for_Server/RxMarkup/generalInformation",
+            "RxSDK_for_Server/RxMarkup/theRxRedlineObject",
+            "RxSDK_for_Server/RxMarkup/appendixes",
+          ],
+        },
+        {
+          type: "category",
+          label: "RxPDF",
+          items: [
+            "RxSDK_for_Server/RxPDF/generalInformation",
+            "RxSDK_for_Server/RxPDF/theRxPDFObject",
+            "RxSDK_for_Server/RxPDF/appendixes",
+          ],
+        },
+        {
+          type: "category",
+          label: "RxPrint",
+          items: [
+            "RxSDK_for_Server/RxPrint/generalInformation",
+            "RxSDK_for_Server/RxPrint/theRxPrinterObject",
+            "RxSDK_for_Server/RxPrint/theRxPrinter3dObject",
+            "RxSDK_for_Server/RxPrint/appendixes",
+          ],
+        },
+        {
+          type: "category",
+          label: "RxSymbol",
+          items: [
+            "RxSDK_for_Server/RxSymbol/generalInformation",
+            "RxSDK_for_Server/RxSymbol/theRxSymbolsObject",
+            "RxSDK_for_Server/RxSymbol/appendixes",
+          ],
+        },
+        {
+          type: "category",
+          label: "RxConvert",
+          items: [
+            "RxSDK_for_Server/RxConvert/generalInformation",
+            "RxSDK_for_Server/RxConvert/theRxConverterObject",
+            "RxSDK_for_Server/RxConvert/theRxAcadConverterObject",
+            "RxSDK_for_Server/RxConvert/appendixes",
+          ],
+        },
       ],
     },
   ],
+
+  rxRESTAPI: ["RxREST_API/introduction"],
+  
 
 };
 
