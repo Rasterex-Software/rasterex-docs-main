@@ -17,15 +17,15 @@ The RxSDK consists of the following objects:
 | 3   | RxLoadSettings  | Overrides filter settings during loading.                                                                                                                 | This document |
 | 4   | RxSaveSettings  | Overrides filter settings during saving.                                                                                                                  | This document |
 | 5   | RxText          | Provides functions for extracting and searching text in a document.                                                                                       | This document |
-| 6   | RxDisplay       | Displays document contents on your screen.                                                                                                                | RxDisplay.pdf |
-| 7   | RxDisplay3D     | Offers specific functions for displaying 3D files, such as rotation using matrices and walkthroughs.                                                      | RxDisplay.pdf |
-| 8   | RxPrint         | Provides printer-specific functions, including printing, listing printers, and paper sizes.                                                               | RxPrint.pdf   |
-| 9   | RxPrint3D       | Provides functions for printing 3D files.                                                                                                                 | RxPrint.pdf   |
-| 10  | RxConvert       | Converts supported document formats to various formats, including PDF, TIFF, DWG, PNG, PLT, JPEG, etc.                                                    | RxConvert.pdf |
-| 11  | RxAcadConverter | Converts between AutoCAD versions.                                                                                                                        | RxConvert.pdf |
-| 12  | RxPDF           | Functions for merging/splitting PDFs, adding markup (burned-in or as annotations), and converting to PDF/A without data loss.                             | RxPDF.pdf     |
-| 13  | RxRedline       | Provides complete markup support for your application.                                                                                                    | RxMarkup.pdf  |
-| 14  | RxSymbols       | Loads symbols from Rasterex libraries and generates various barcode standard images.                                                                      | RxSymbols.pdf |
+| 6   | RxDisplay       | Displays document contents on your screen.                                                                                                                | RxDisplay     |
+| 7   | RxDisplay3D     | Offers specific functions for displaying 3D files, such as rotation using matrices and walkthroughs.                                                      | RxDisplay     |
+| 8   | RxPrint         | Provides printer-specific functions, including printing, listing printers, and paper sizes.                                                               | RxPrint       |
+| 9   | RxPrint3D       | Provides functions for printing 3D files.                                                                                                                 | RxPrint       |
+| 10  | RxConvert       | Converts supported document formats to various formats, including PDF, TIFF, DWG, PNG, PLT, JPEG, etc.                                                    | RxConvert     | 
+| 11  | RxAcadConverter | Converts between AutoCAD versions.                                                                                                                        | RxConvert     |
+| 12  | RxPDF           | Functions for merging/splitting PDFs, adding markup (burned-in or as annotations), and converting to PDF/A without data loss.                             | RxPDF         |
+| 13  | RxRedline       | Provides complete markup support for your application.                                                                                                    | RxMarkup      |
+| 14  | RxSymbols       | Loads symbols from Rasterex libraries and generates various barcode standard images.                                                                      | RxSymbol      |
 
 ## What You Will Find in This Document
 
@@ -69,7 +69,7 @@ The following tables detail the available filters and the formats they support.
 
 | Filter Name             | Extension | Description                 | Version Support      |
 | ----------------------- | --------- | --------------------------- | -------------------- |
-| RxFilter_ACAD           | DWG, DXF  | AutoCAD drawing format      | 2.5 – 2024           |
+| RxFilter_ACAD           | DWG, DXF  | AutoCAD drawing format      | 2.5 – 2026           |
 | RxFilter_Anvil1000      | DRW       | Anvil 1000 drawing format   | 1, 2, and 3          |
 | RxFilter_CadKey         | PRT       | Cadkey drawing format       | -                    |
 | RxFilter_Calcomp        | CCP       | Calcomp plotter format      | -                    |
@@ -148,8 +148,9 @@ Hybrid formats combine a CAD file (usually AutoCAD DWG) with one or more raster 
 
 | Filter Name        | Extension     | Description                            | Version Support                                 |
 | ------------------ | ------------- | -------------------------------------- | ----------------------------------------------- |
-| RxFilter_Inventor  | IPT, IDW, IAM | Inventor part, drawing, and assembly   | Up to and including 2024                        |
-| RxFilter_SW2015    | PRT, ASM, DRW | SolidWorks part, drawing, and assembly | Up to and including 2019 (2016+ as 64-bit only) |
+| RxFilter_GLTF      | GLTF,GLB | GLTF (GL Transmission Format)  | All |
+| RxFilter_IFC       | IFC, IFCZIP, IFCXML | IFC | All |
+| RxFilter_Inventor  | IPT, IDW, IAM | Inventor part, drawing, and assembly   | Up to and including 2023                        |
 | RxFilter_SolidEdge | PAR, DFT      | SolidEdge part and drawings            | Up to and including 17                          |
 | RxFilter_STL       | STL           | Stereolithography file format          | -                                               |
 
