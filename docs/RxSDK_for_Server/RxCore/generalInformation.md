@@ -161,4 +161,4 @@ Some filters are **write-only**, meaning they can only write to the specified fo
 | Filter Name   | Extension | Description              | Version Support |
 | ------------- | --------- | ------------------------ | --------------- |
 | RxFilter_SVG  | SVG       | Scalable Vector Graphics | 1.1             |
-| RxFilter_PDFW | PDF       | Acrobat PDF              | 1.x, PDF/A-2b   |
+| RxFilter_PDFW | PDF       | Acrobat PDF              | 1.7, PDF/A-2b, PDF/A-3b, PDF/A-2u, PDF/A-3u, PDF/A-4u, PDF/A-4e   |
