@@ -13,3 +13,7 @@ RxCore.selectMarkUpByIndex(indx)
 ### Returns
 
 - **NA** — This method does not return a value.
+
+### Callbacks
+
+The selected markup is returned using the [GUI_MarkupIndex](../callbacks/GUI_MarkupIndex) callback event.

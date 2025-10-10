@@ -4,7 +4,11 @@ Exports the currently active drawing or document to a supported format, such as 
 
 ```typescript
 RxCore.exportFile(consolidate, format, UPI, paperSize, markupFlag)
+
+
 ```
+
+
 
 ### Parameters
 
@@ -17,3 +21,7 @@ RxCore.exportFile(consolidate, format, UPI, paperSize, markupFlag)
 ### Returns
 
 - **NA** — This method does not return a value.
+
+Use the callback [RxCore.GUI_exportComplete](../callbacks/GUI_exportComplete) to handle the created export file.
+
+  

@@ -69,6 +69,7 @@ const sidebars: SidebarsConfig = {
             "introduction/Developer-Guide/openFile",
             "introduction/Developer-Guide/SetUser",
             "introduction/Developer-Guide/watermark",
+            "introduction/Developer-Guide/draganddrop"
             
           ],
         },
@@ -302,9 +303,12 @@ const sidebars: SidebarsConfig = {
                     "introduction/page/methods/calibrate",
                     "introduction/page/methods/exportFilePage",
                     "introduction/page/methods/getClipRect",
+                    "introduction/page/methods/getCurrentPageScaleValue",
                     "introduction/page/methods/getFixedScale",
                     "introduction/page/methods/getPageDimensions",
                     "introduction/page/methods/getPageRotation",
+                    "introduction/page/methods/getpagethumbnail",
+
                     "introduction/page/methods/getSnapState",
                     "introduction/page/methods/gotoPage",
                     "introduction/page/methods/imperialUnit",
@@ -376,7 +380,11 @@ const sidebars: SidebarsConfig = {
                   label: "Methods",
                   items: [
                     "introduction/markup-annotations/methods/addMarkup",
+                    "introduction/markup-annotations/methods/addSignature",
                     "introduction/markup-annotations/methods/allowPolygonMove",
+
+                    "introduction/markup-annotations/methods/animateLineStyle",
+
                     "introduction/markup-annotations/methods/applyAngleLength",
                     "introduction/markup-annotations/methods/applyAngleLengthSelected",
                     "introduction/markup-annotations/methods/applyMarkup",
@@ -404,6 +412,10 @@ const sidebars: SidebarsConfig = {
                     "introduction/markup-annotations/methods/deleteMarkUp",
                     "introduction/markup-annotations/methods/deleteMarkupbyGUID",
                     "introduction/markup-annotations/methods/deletePoint",
+
+                    "introduction/markup-annotations/methods/downloadSignature",
+                    
+
                     "introduction/document/methods/findMarkUp",
                     "introduction/markup-annotations/methods/getAllSelectedMarkup",
                     
@@ -411,6 +423,9 @@ const sidebars: SidebarsConfig = {
                     "introduction/markup-annotations/methods/getDisplayName",
                     "introduction/markup-annotations/methods/getFillColor",
                     "introduction/markup-annotations/methods/getFillStyle",
+
+                    "introduction/markup-annotations/methods/getFont",
+
                     "introduction/markup-annotations/methods/getLineColor",
                     "introduction/markup-annotations/methods/getLineWidth",
                     "introduction/markup-annotations/methods/getmarkupGUIDs",
@@ -452,6 +467,8 @@ const sidebars: SidebarsConfig = {
                     "introduction/markup-annotations/methods/markUpFreePen",
                     "introduction/markup-annotations/methods/markUpHighlight",
                     "introduction/markup-annotations/methods/markuphoverevent",
+
+                    "introduction/markup-annotations/methods/markupImageStamp",
                     "introduction/markup-annotations/methods/markUpLayerDialog",
                     "introduction/markup-annotations/methods/markUpLine",
                     "introduction/markup-annotations/methods/markupMeasurePath",
@@ -466,8 +483,11 @@ const sidebars: SidebarsConfig = {
                     "introduction/markup-annotations/methods/markupSaveCheck",
                     "introduction/markup-annotations/methods/markUpShape",
                     "introduction/markup-annotations/methods/markUpStamp",
-                    "introduction/markup-annotations/methods/markupSymbol",
+                    
                     "introduction/markup-annotations/methods/markUpSubType",
+
+                    "introduction/markup-annotations/methods/markupSymbol",
+
                     "introduction/markup-annotations/methods/markUpTextRect",
                     "introduction/markup-annotations/methods/markUpTextRectArrow",
                     "introduction/document/methods/markupTextSearch",
@@ -481,7 +501,12 @@ const sidebars: SidebarsConfig = {
 
                     "introduction/document/methods/openMarkup",
                     "introduction/markup-annotations/methods/pasteMarkUp",
+
+                    "introduction/markup-annotations/methods/removeLastPoint",
+
                     "introduction/markup-annotations/methods/restoreMouseInput",
+
+
                     "introduction/document/methods/select3DMarkup",
                     "introduction/markup-annotations/methods/selectMarkupbyGUID",
                     "introduction/markup-annotations/methods/selectMarkupbyGUIDs",
@@ -511,22 +536,30 @@ const sidebars: SidebarsConfig = {
                     "introduction/markup-annotations/methods/setLineWidthMarkup",
                     "introduction/markup-annotations/methods/setLineWidthUnits",
                     "introduction/markup-annotations/methods/setMarkupLayer",
+
+                    "introduction/markup-annotations/methods/setMarkupMarkedColor",
+
                     "introduction/markup-annotations/methods/setmarkupRxGUID",
                     "introduction/document/methods/setMarkupSearchPadding",
                     "introduction/markup-annotations/methods/setMarkupXMLData",
                     "introduction/markup-annotations/methods/setRxSpaceColor",
                     "introduction/markup-annotations/methods/setSpaceID",
                     "introduction/markup-annotations/methods/showMarkupLabels",
+                    
+
                     "introduction/markup-annotations/methods/spaceEdit",
+
                     "introduction/markup-annotations/methods/unSelectAllMarkup",
+
                     "introduction/markup-annotations/methods/unSelectMarkupbyGUID",
                     "introduction/markup-annotations/methods/unSelectMarkupbyGUIDs",
+
+
                     "introduction/markup-annotations/methods/unSelectMarkupbyIndex",
+
+                    "introduction/markup-annotations/methods/uploadSignature",
                     "introduction/markup-annotations/methods/useFraction",
-                    "introduction/markup-annotations/methods/useNoScale",
-                    "introduction/markup-annotations/methods/getFont",
-                    "introduction/markup-annotations/methods/setMarkupMarkedColor",
-                    "introduction/markup-annotations/methods/removeLastPoint",
+                    "introduction/markup-annotations/methods/useNoScale"
                   ],
                 },
                 {
@@ -538,6 +571,10 @@ const sidebars: SidebarsConfig = {
                     "introduction/markup-annotations/callbacks/GUI_Consolidate",
                     "introduction/markup-annotations/callbacks/GUI_ConsolidateMarkup",
                     "introduction/markup-annotations/callbacks/GUI_CustomStamps",
+
+                    "introduction/markup-annotations/callbacks/GUI_getsignatureComplete",
+                    
+
                     "introduction/markup-annotations/callbacks/GUI_Markup",
                     "introduction/markup-annotations/callbacks/GUI_MarkupIndex",
                     "introduction/markup-annotations/callbacks/GUI_MarkupAreaEdit",
@@ -552,6 +589,10 @@ const sidebars: SidebarsConfig = {
                     "introduction/markup-annotations/callbacks/GUI_MarkupUnselect",
                     "introduction/markup-annotations/callbacks/GUI_Notediag",
                     "introduction/markup-annotations/callbacks/GUI_Permissions",
+
+                    "introduction/markup-annotations/callbacks/GUI_putsignatureComplete",
+                    
+
                     "introduction/markup-annotations/callbacks/GUI_Stamps",
                     "introduction/markup-annotations/callbacks/GUI_Symbols",
                     "introduction/markup-annotations/callbacks/GUI_Textdiag",
@@ -801,6 +842,7 @@ const sidebars: SidebarsConfig = {
                       type: "category",
                       label: "Methods",
                       items: [
+                        "introduction/pro-version/file/methods/getDPI",
                         "introduction/pro-version/file/methods/hidedisplayCanvas",
                         "introduction/pro-version/file/methods/hideAllCanvas",
                         "introduction/pro-version/file/methods/initFoxit",
@@ -825,11 +867,10 @@ const sidebars: SidebarsConfig = {
                       items: [
                         "introduction/pro-version/document/methods/clearDocumentTextSearch",
                         "introduction/pro-version/document/methods/documentTextSearch",
+                        "introduction/pro-version/document/methods/downloadPDF",
                         "introduction/pro-version/document/methods/endGetTextRects",
-                        "introduction/pro-version/document/methods/markupTextWithOrange",
-                        "introduction/pro-version/document/methods/movePageTo",
-                        "introduction/pro-version/document/methods/removePage",
-                        
+                        "introduction/pro-version/document/methods/importPages",
+                        "introduction/pro-version/document/methods/markupTextWithOrange"
                       ],
                     },
                     {
@@ -838,7 +879,7 @@ const sidebars: SidebarsConfig = {
                       items: [
                         "introduction/pro-version/document/callbacks/GUI_DocumentSearch",
                         "introduction/pro-version/document/callbacks/GUI_NumMatchesRect",
-                        "introduction/pro-version/document/callbacks/GUI_PageCountChanged",
+                        "introduction/pro-version/document/callbacks/GUI_PageCountChanged"
                       ],
                     },
                   ],
@@ -851,6 +892,11 @@ const sidebars: SidebarsConfig = {
                       type: "category",
                       label: "Methods",
                       items: [
+                        "introduction/pro-version/page/methods/copyPage",
+                        "introduction/pro-version/page/methods/movePageTo",
+                        "introduction/pro-version/page/methods/pastePage",
+                        
+                        "introduction/pro-version/page/methods/removePage",
                         "introduction/pro-version/page/methods/setBirdsEyeFoxit",
                         "introduction/pro-version/page/methods/singlePageScrollPan",
                       ],
@@ -889,6 +935,10 @@ const sidebars: SidebarsConfig = {
                       type: "category",
                       label: "Methods",
                       items: [
+                        "introduction/pro-version/pdf/methods/addWatermarkRender",
+                        "introduction/pro-version/pdf/methods/addWatermarkToAllPages",
+                        "introduction/pro-version/pdf/methods/addWatermarkToPage",
+                        
                         "introduction/pro-version/pdf/methods/bringIframeToFront",
                         "introduction/pro-version/pdf/methods/changePDFLayer",
                         "introduction/pro-version/pdf/methods/checkLargePDF",
@@ -909,7 +959,8 @@ const sidebars: SidebarsConfig = {
                         "introduction/pro-version/pdf/methods/getfoxitThumbnail",
                         "introduction/pro-version/pdf/methods/getPDFintialScale",
                         "introduction/pro-version/pdf/methods/importFDF",
-                        "introduction/pro-version/pdf/methods/navigateBookmark",
+                        "introduction/pro-version/pdf/methods/removeWatermarkFromAllPages",
+
                         "introduction/pro-version/pdf/methods/scrollBarCheck",
                         "introduction/pro-version/pdf/methods/setfoxitPageSize",
                         "introduction/pro-version/pdf/methods/setPDFBookmarks",

@@ -20,6 +20,11 @@ RxCore.setinitFile(fileurl)
   - `fileurlobj.cacheid`: **string** — A string containing a unique name to use for the cache entry or null.
   - `fileurlobj.displayname`: **string** — A string that is used as the document file name or null.
 
+### Cache ID
+Using a cache id will make sure that the back-end will store the content in a known location. This will speed up the loading of files, when loading these files at a later stage. It will also make sure that annotations saved to the server can be found when opening files using an URL.
+
+
+
 ### Returns
 
 - **NA** — This method does not return a value.

@@ -1,7 +1,28 @@
 Connection callback that is called when a markup object is selected.
 
-*See chapter on markup objects for information on properties and methods.*
+
+### Example
+
+```javascript
+RxCore.GUI_Markup.connect(function (markup, operation) {
+
+    //if no markup was selected but just a click on canvas the markup has the value -1
+
+    if(markup != -1){
+
+        // you can get markup object properties and call functions on the markup object here.
+        if (operation.created){
+            console.log(markup.type, "Just created");
+        }
+
+    }
+
+  
+});
+```
+
+*See [markup object](../../markup-methods/intro) for information on properties and methods.*
 
 ### Callback Parameters
 - **Markup**: Markup object.
-- **Created**: Boolean, true if the markup object was just created.
+- **operation**: an object consisting of 3 booleans. created, modified, deleted 
