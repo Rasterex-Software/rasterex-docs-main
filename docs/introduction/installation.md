@@ -34,12 +34,12 @@ C:\temp>msiexec /i RxView360_PDFJS_64R12B6.msi
 
 ### Pro version
 
-[MSI installation 64 bit](https://dl.rasterex.com/RxView360_Foxit_64R12B5.msi)
+[MSI installation 64 bit](https://dl.rasterex.com/RxView360_Foxit_64R12B7.msi)
 
 
 ``` console
 
-C:\temp>msiexec /i RxView360_Foxit_64R12B5.msi
+C:\temp>msiexec /i RxView360_Foxit_64R12B7.msi
 
 ```
 

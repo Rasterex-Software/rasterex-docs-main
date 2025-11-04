@@ -10,22 +10,22 @@ To address this, the **RxSDK** was developed to provide developer-friendly inter
 
 The RxSDK consists of the following objects:
 
-| No  | Object Name     | Description                                                                                                                                               | Documentation |
-| --- | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- |
-| 1   | RxEngine        | The first object used in your code. Locates all available file format filters and manages FlexLM licenses (unless overridden by a Rasterex license code). | This document |
-| 2   | RxDoc           | Handles document loading and provides methods to manipulate layout, pages, blocks, and layers.                                                            | This document |
-| 3   | RxLoadSettings  | Overrides filter settings during loading.                                                                                                                 | This document |
-| 4   | RxSaveSettings  | Overrides filter settings during saving.                                                                                                                  | This document |
-| 5   | RxText          | Provides functions for extracting and searching text in a document.                                                                                       | This document |
-| 6   | RxDisplay       | Displays document contents on your screen.                                                                                                                | RxDisplay     |
-| 7   | RxDisplay3D     | Offers specific functions for displaying 3D files, such as rotation using matrices and walkthroughs.                                                      | RxDisplay     |
-| 8   | RxPrint         | Provides printer-specific functions, including printing, listing printers, and paper sizes.                                                               | RxPrint       |
-| 9   | RxPrint3D       | Provides functions for printing 3D files.                                                                                                                 | RxPrint       |
-| 10  | RxConvert       | Converts supported document formats to various formats, including PDF, TIFF, DWG, PNG, PLT, JPEG, etc.                                                    | RxConvert     | 
-| 11  | RxAcadConverter | Converts between AutoCAD versions.                                                                                                                        | RxConvert     |
-| 12  | RxPDF           | Functions for merging/splitting PDFs, adding markup (burned-in or as annotations), and converting to PDF/A without data loss.                             | RxPDF         |
-| 13  | RxRedline       | Provides complete markup support for your application.                                                                                                    | RxMarkup      |
-| 14  | RxSymbols       | Loads symbols from Rasterex libraries and generates various barcode standard images.                                                                      | RxSymbol      |
+| No  | Object Name     | Description                                                                                                                                               | 
+| --- | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | 
+| 1   | RxEngine        | The first object used in your code. Locates all available file format filters and manages FlexLM licenses (unless overridden by a Rasterex license code). | 
+| 2   | RxDoc           | Handles document loading and provides methods to manipulate layout, pages, blocks, and layers.                                                            | 
+| 3   | RxLoadSettings  | Overrides filter settings during loading.                                                                                                                 | 
+| 4   | RxSaveSettings  | Overrides filter settings during saving.                                                                                                                  | 
+| 5   | RxText          | Provides functions for extracting and searching fortext in a document.                                                                                    |  
+| 6   | RxDisplay       | Displays document contents on your screen.                                                                                                                | 
+| 7   | RxDisplay3D     | Offers specific functions for displaying 3D files, such as rotation using matrices and walkthroughs.                                                      | 
+| 8   | RxPrint         | Provides printer-specific functions, including printing, listing printers, and paper sizes.                                                               | 
+| 9   | RxPrint3D       | Provides functions for printing 3D files.                                                                                                                 | 
+| 10  | RxConvert       | Converts supported document formats to various formats, including PDF, TIFF, DWG, PNG, PLT, JPEG, etc.                                                    | 
+| 11  | RxAcadConverter | Converts between AutoCAD versions.                                                                                                                        | 
+| 12  | RxPDF           | Functions for merging/splitting PDFs, adding markup (burned-in or as annotations), and converting to PDF/A without data loss.                             | 
+| 13  | RxRedline       | Provides complete markup support for your application.                                                                                                    | 
+| 14  | RxSymbols       | Loads symbols from Rasterex libraries and generates various barcode standard images.                                                                      | 
 
 ## What You Will Find in This Document
 
@@ -74,12 +74,12 @@ The following tables detail the available filters and the formats they support.
 | RxFilter_CadKey         | PRT       | Cadkey drawing format       | -                    |
 | RxFilter_Calcomp        | CCP       | Calcomp plotter format      | -                    |
 | RxFilter_CGM            | CGM       | Computer graphics metafile  | Binary only          |
-| RxFilter_DGN            | DGN       | Microstation drawing format | 3, 4, 5, and 7       |
-| RxFilter_DWF3           | DWF       | Drawing web format          | Up to version 4      |
-| RxFilter_DWF            | DWF       | Drawing web format          | Up to version 5.5    |
-| RxFilter_DWF6           | DWF       | Design web format           | Version 6 and up     |
+| RxFilter_DWF3           | DWF       | Autodesk drawing web format | Up to version 4      |
+| RxFilter_DWF            | DWF       | Autodesk drawing web format | Up to version 5.5    |
+| RxFilter_DWF6           | DWF       | Autodesk design web format  | Version 6 and up     |
+| RxFilter_DWF7           | DWF, DWFX | Autodesk design web format  | Version 7 and up     |
 | RxFilter_FelixCAD       | FLX       | FelixCAD drawing format     | 2, 3, and 4          |
-| RxFilter_Gerber         | GBR       | Gerber plotter format       | RS274, RS-274X       |
+| RxFilter_Gerber         | GBR       | Gerber plotter format       | RS-274D, RS-274X, X2, X3 |
 | RxFilter_HPGL           | PLT       | HP graphic language         | HPGL, HPGL/2, HP-RTL |
 | RxFilter_MicrostationV8 | DGN       | Microstation drawing format | All including 8.x    |
 | RxFilter_ME10           | MI        | ME 10/30 drawing format     | -                    |
@@ -102,28 +102,30 @@ Hybrid formats combine a CAD file (usually AutoCAD DWG) with one or more raster 
 
 | Filter Name       | Extension   | Description                    | Version Support          |
 | ----------------- | ----------- | ------------------------------ | ------------------------ |
-| RxFilter_BMP      | BMP         | Windows bitmap format          | Windows BMP and OS/2 DIB |
-| RxFilter_CALS     | CAL         | CALS raster format             | Type 1 Group 4           |
+| RxFilter_BMP      | BMP         | Windows image file format      | Windows BMP and OS/2 DIB |
+| RxFilter_CALS     | CAL         | CALS raster format             | Type I and II            |
 | RxFilter_CIT      | CIT         | Intergraph Group 4 Raster      | -                        |
 | RxFilter_DSI      | DSI         | Cimage DSI Raster              | Group 4                  |
 | RxFilter_EDMICS   | TG4         | EDMICS raster format           | Tiled Group 4            |
 | RxFilter_ESP      | IG4         | Image Systems Group 4          | -                        |
 | RxFilter_GIF      | GIF         | Compuserve GIF                 | GIF 87a / 89a            |
 | RxFilter_GTX      | G3, G4, RNL | GTX raster formats             | -                        |
-| RxFilter_JBIG     | JBG         | JBIG Raster Format             | -                        |
+| RxFilter_HEIC     | HEIC        | HEIF image file format         | -                        |
+| RxFilter_JBIG     | JBG         | JBIG image file format         | -                        |
 | RxFilter_JPEG     | JPG         | JFIF compliant JPEG            | -                        |
 | RxFilter_JPEG2000 | JP2, J2K    | JPEG 2000                      | -                        |
 | RxFilter_PCX      | PCX         | PC Paintbrush                  | -                        |
 | RxFilter_PNG      | PNG         | Portable network graphics      | -                        |
 | RxFilter_PSD      | PSD         | Adobe Photoshop                | -                        |
-| RxFilter_RAS      | RAS         | Sun raster format              | -                        |
+| RxFilter_RAS      | RAS         | Sun image file format          | -                        |
 | RxFilter_RGB      | RGB         | Intergraph RGB Type 27         | -                        |
-| RxFilter_RLC      | RLC         | Run length format              | RLC, RCL-2               |
+| RxFilter_RLC      | RLC         | Run length format              | RLC, RLC-2               |
 | RxFilter_RLE      | RLE         | Intergraph RLE Raster          | -                        |
 | RxFilter_SFF      | SFF         | Structured Fax Format          | -                        |
 | RxFilter_TG4      | TG4         | Intergraph tiled raster format | -                        |
-| RxFilter_TGA      | TGA         | TARGA image format             | -                        |
+| RxFilter_TGA      | TGA         | TARGA image file format        | -                        |
 | RxFilter_TIFF     | TIF         | Tagged image file format       | -                        |
+| RxFilter_WEBP     | WEBP        | Google image file format       | -                        |
 | RxFilter_XWD      | XWD         | X-Windows dump format          | -                        |
 
 ## Document File Formats
@@ -131,9 +133,9 @@ Hybrid formats combine a CAD file (usually AutoCAD DWG) with one or more raster 
 | Filter Name       | Extension | Description                    | Version Support       |
 | ----------------- | --------- | ------------------------------ | --------------------- |
 | RxFilter_Binary   | \*        | Hex dump of unsupported files  | -                     |
+| RxFilter_DynaPDF  | PDF       | Adobe portable document format | All                   |
 | RxFilter_Metafile | WMF, EMF  | Windows metafile format        | Enhanced and standard |
 | RxFilter_Text     | TXT       | Text file                      | ASCII                 |
-| RxFilter_PDF      | PDF       | Adobe portable document format | All                   |
 | RxFilter_PPT      | PPT       | PowerPoint format              | 97, 2000, XP, 2003    |
 | RxFilter_Word2000 | DOC       | Word file format               | 97, 2000, XP, 2003    |
 | RxFilter_Word95   | DOC       | Word file format               | 95, 6.0               |
@@ -148,9 +150,9 @@ Hybrid formats combine a CAD file (usually AutoCAD DWG) with one or more raster 
 
 | Filter Name        | Extension     | Description                            | Version Support                                 |
 | ------------------ | ------------- | -------------------------------------- | ----------------------------------------------- |
-| RxFilter_GLTF      | GLTF,GLB | GLTF (GL Transmission Format)  | All |
+| RxFilter_GLTF      | GLTF, GLB | GLTF (GL Transmission Format)  | All |
 | RxFilter_IFC       | IFC, IFCZIP, IFCXML | IFC | All |
-| RxFilter_Inventor  | IPT, IDW, IAM | Inventor part, drawing, and assembly   | Up to and including 2023                        |
+| RxFilter_Inventor  | IPT, IDW, IAM | Inventor part, drawing, and assembly   | Up to and including 2026                        |
 | RxFilter_SolidEdge | PAR, DFT      | SolidEdge part and drawings            | Up to and including 17                          |
 | RxFilter_STL       | STL           | Stereolithography file format          | -                                               |
 
@@ -161,4 +163,4 @@ Some filters are **write-only**, meaning they can only write to the specified fo
 | Filter Name   | Extension | Description              | Version Support |
 | ------------- | --------- | ------------------------ | --------------- |
 | RxFilter_SVG  | SVG       | Scalable Vector Graphics | 1.1             |
-| RxFilter_PDFW | PDF       | Acrobat PDF              | 1.7, PDF/A-2b, PDF/A-3b, PDF/A-2u, PDF/A-3u, PDF/A-4u, PDF/A-4e   |
+| RxFilter_PDFW | PDF       | Acrobat PDF              | 1.7, PDF/A-2b, PDF/A-3b, PDF/A-2u, PDF/A-3u, PDF/A-4, PDF/A-4e   |

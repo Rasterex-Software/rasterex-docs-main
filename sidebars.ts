@@ -303,6 +303,9 @@ const sidebars: SidebarsConfig = {
                     "introduction/page/methods/calibrate",
                     "introduction/page/methods/exportFilePage",
                     "introduction/page/methods/getClipRect",
+
+                    "introduction/page/methods/getCurrentPageScaleLabel",
+
                     "introduction/page/methods/getCurrentPageScaleValue",
                     "introduction/page/methods/getFixedScale",
                     "introduction/page/methods/getPageDimensions",
@@ -339,7 +342,7 @@ const sidebars: SidebarsConfig = {
                     "introduction/page/methods/setnavScaleOffsetPage",
                     "introduction/page/methods/setpageAs3DNavigator",
                     "introduction/page/methods/setThumbnailSize",
-                    "introduction/page/methods/setUnit",
+                    
                     
                     "introduction/page/methods/zoomFit",
                     "introduction/page/methods/zoomHeight",
@@ -447,6 +450,10 @@ const sidebars: SidebarsConfig = {
                     "introduction/markup-annotations/methods/getSymbolLibPNGData",
                     "introduction/markup-annotations/methods/getSymbolName",
                     "introduction/markup-annotations/methods/getTextColor",
+
+                    "introduction/markup-annotations/methods/getTextMarkup",
+                    
+
                     "introduction/markup-annotations/methods/hideMarkUp",
                     "introduction/markup-annotations/methods/hideLabels",
                     "introduction/markup-annotations/methods/hideTextInput",
@@ -544,6 +551,9 @@ const sidebars: SidebarsConfig = {
                     "introduction/markup-annotations/methods/setMarkupXMLData",
                     "introduction/markup-annotations/methods/setRxSpaceColor",
                     "introduction/markup-annotations/methods/setSpaceID",
+
+                    "introduction/markup-annotations/methods/setUnit",
+                    
                     "introduction/markup-annotations/methods/showMarkupLabels",
                     
 
@@ -559,7 +569,10 @@ const sidebars: SidebarsConfig = {
 
                     "introduction/markup-annotations/methods/uploadSignature",
                     "introduction/markup-annotations/methods/useFraction",
-                    "introduction/markup-annotations/methods/useNoScale"
+                    "introduction/markup-annotations/methods/useNoScale",
+
+                    "introduction/markup-annotations/methods/usePanToMarkup"
+
                   ],
                 },
                 {
