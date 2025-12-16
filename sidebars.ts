@@ -844,6 +844,18 @@ const sidebars: SidebarsConfig = {
             },
             {
               type: "category",
+              label: "Magnifier",
+              items: [
+                "introduction/Magnifier/Magnifier-object",
+                "introduction/Magnifier/architecture",
+                "introduction/Magnifier/magnifier-methods",
+                "introduction/Magnifier/magnifier-properties",
+                "introduction/Magnifier/magnifier-callbacks",
+                "introduction/Magnifier/alignment-process",
+              ],
+            },            
+            {
+              type: "category",
               label: "Pro Version",
               items: [
     

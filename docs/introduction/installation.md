@@ -18,30 +18,34 @@ Activate all necessary features and services.
 
 You should have received a license file with extension “lic”. Copy this file to a folder on the local machine like C:\Temp or another folder with no security restrictions.
 
-Download the latest installation using the link below.
+Download the latest installations using the links below.
+There are 2 installations, one for the back-end only and a front-end installation that installs the latest viewer distribution. You should install these in order, installing the back-end first and the front-end second.
 
-Run the RxView360 setup msi from a command prompt running “as Administrator”.
 
-### Basic version
+### Back-End
 
-[MSI installation 64 bit](https://dl.rasterex.com/RxView360_PDFJS_64R12B6.msi)
+[MSI installation 64 bit Back-End](https://dl.rasterex.com/RxBack-endInstallerR22B294.msi)
 
-``` console
-
-C:\temp>msiexec /i RxView360_PDFJS_64R12B6.msi
-
-```
-
-### Pro version
-
-[MSI installation 64 bit](https://dl.rasterex.com/RxView360_Foxit_64R12B7.msi)
-
+Run the setup msi from a command prompt running “as Administrator”.
 
 ``` console
 
-C:\temp>msiexec /i RxView360_Foxit_64R12B7.msi
+C:\temp>msiexec /i RxBack-endInstallerR22B294.msi
 
 ```
+
+### Front-End Pro version
+
+[MSI installation 64 bit Front-End](https://dl.rasterex.com/RxView360FrontEnd.msi)
+
+Run the setup msi from a command prompt running “as Administrator”.
+
+``` console
+
+C:\temp>msiexec /i RxView360FrontEnd.msi
+
+```
+
 
 <center>
 ![Alt text](./img/install1.png)
@@ -84,7 +88,17 @@ Open your browser and check that Rasterex Web Viewer is running correctly by ope
 
 
 
+There is also a full installation for the Basic version.
 
+### Basic version
+
+[MSI installation 64 bit Basic](https://dl.rasterex.com/RxView360_PDFJS_64R12B6.msi)
+
+``` console
+
+C:\temp>msiexec /i RxView360_PDFJS_64R12B6.msi
+
+```
 
 
 
