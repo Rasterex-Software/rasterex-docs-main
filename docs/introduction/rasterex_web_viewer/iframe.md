@@ -6,7 +6,7 @@ title: Using an Iframe
 
 You can intergrate the viewer into your system using an Iframe. Having an Iframe object you can communicate with the viewer using a built in PostMessage system.
 
-In the exmaple below the file opened on startup is set using a method called [setinitFile.](./file/methods/setinitFile)
+In the exmaple below the file opened on startup is set using a method called [setinitFile.](../file/methods/setinitFile)
  
 
 

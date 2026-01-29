@@ -43,17 +43,30 @@ You can pass any of the values listed below in the object sent using the guiConf
 export interface IGuiConfig {
     canAnnotate?: boolean;
     canConsolidate?: boolean;
+    canLogin?: boolean;
+    canCollaborate?: boolean;
+    convertPDFAnnots?: boolean;
+    createPDFAnnotproxy?: boolean;
+    showmarkupZoom? : boolean;
+    showAnnotationsOnLoad ? : boolean;
+    showAnnotSwitch? : boolean;
     canSignature?: boolean;
     disableImages?: boolean;
     disableSymbol?: boolean;
+    disableScaling?: boolean;
     disableLinks?: boolean;
     disableSignature?: boolean;    
     canFileOpen?: boolean;
+    alwaysShowScaling?: boolean;
     canCompare?: boolean;
     canPrint?: boolean;
     canExport?: boolean;
     canSaveFile?: boolean;
     canGetFileInfo?: boolean;
+
+    disableImportXFDFButton?: boolean;
+    disableExportXFDFButton?: boolean;
+
     disableSideNavMenu?: boolean;
     disableTopNavMenu?: boolean;
     disableBurgerMenuCompare?: boolean;
@@ -65,6 +78,7 @@ export interface IGuiConfig {
     disableMarkupTextButton?: boolean;
     disableMarkupCalloutButton?: boolean;
     disableMarkupStampButton?: boolean;
+    disableContinuousButton?: boolean;
     disableMarkupPaintButton?: boolean;
     disableMarkupShapeButton?: boolean;
     disableMarkupShapeRectangleButton?: boolean;
@@ -79,6 +93,7 @@ export interface IGuiConfig {
     disableMarkupNoteButton?: boolean;
     disableMarkupLockButton?: boolean;
     disableMarkupUndoRedoButtons?: boolean;
+    disableNoScaleButton?: boolean;
     disableBottomToolbar?: boolean;
     disableBirdEyeButton?: boolean;
     disableReset3DModelButton?: boolean;
@@ -91,6 +106,7 @@ export interface IGuiConfig {
     disableClipping3DModelButton?: boolean;
     disableCreateViewButton?: boolean;
     disableMagnifyingGlassButton?: boolean;
+    disable2DVectorInfoButton? : boolean;
     disableZoomInButton?: boolean;
     disableZoomOutButton?: boolean;
     disableFitToWindowButton?: boolean;
@@ -105,8 +121,13 @@ export interface IGuiConfig {
     disableBackgroundColorButton?: boolean;
     disableMonochromeButton?: boolean;
     enableGrayscaleButton?: boolean;
+    localStoreAnnotation?: boolean;
+    watermarkdemo?:boolean;
+    forceLogin?:boolean;
+    
     /*  */
     logoUrl?: string;
+    dateFormat?: IGuiDateFormat;
 }
 
    

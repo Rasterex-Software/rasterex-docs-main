@@ -120,17 +120,30 @@ You can pass any of the values listed below in the object sent using the guiConf
 export interface IGuiConfig {
     canAnnotate?: boolean;
     canConsolidate?: boolean;
+    canLogin?: boolean;
+    canCollaborate?: boolean;
+    convertPDFAnnots?: boolean;
+    createPDFAnnotproxy?: boolean;
+    showmarkupZoom? : boolean;
+    showAnnotationsOnLoad ? : boolean;
+    showAnnotSwitch? : boolean;
     canSignature?: boolean;
     disableImages?: boolean;
     disableSymbol?: boolean;
+    disableScaling?: boolean;
     disableLinks?: boolean;
     disableSignature?: boolean;    
     canFileOpen?: boolean;
+    alwaysShowScaling?: boolean;
     canCompare?: boolean;
     canPrint?: boolean;
     canExport?: boolean;
     canSaveFile?: boolean;
     canGetFileInfo?: boolean;
+
+    disableImportXFDFButton?: boolean;
+    disableExportXFDFButton?: boolean;
+
     disableSideNavMenu?: boolean;
     disableTopNavMenu?: boolean;
     disableBurgerMenuCompare?: boolean;
@@ -142,6 +155,7 @@ export interface IGuiConfig {
     disableMarkupTextButton?: boolean;
     disableMarkupCalloutButton?: boolean;
     disableMarkupStampButton?: boolean;
+    disableContinuousButton?: boolean;
     disableMarkupPaintButton?: boolean;
     disableMarkupShapeButton?: boolean;
     disableMarkupShapeRectangleButton?: boolean;
@@ -156,6 +170,7 @@ export interface IGuiConfig {
     disableMarkupNoteButton?: boolean;
     disableMarkupLockButton?: boolean;
     disableMarkupUndoRedoButtons?: boolean;
+    disableNoScaleButton?: boolean;
     disableBottomToolbar?: boolean;
     disableBirdEyeButton?: boolean;
     disableReset3DModelButton?: boolean;
@@ -168,6 +183,7 @@ export interface IGuiConfig {
     disableClipping3DModelButton?: boolean;
     disableCreateViewButton?: boolean;
     disableMagnifyingGlassButton?: boolean;
+    disable2DVectorInfoButton? : boolean;
     disableZoomInButton?: boolean;
     disableZoomOutButton?: boolean;
     disableFitToWindowButton?: boolean;
@@ -182,8 +198,13 @@ export interface IGuiConfig {
     disableBackgroundColorButton?: boolean;
     disableMonochromeButton?: boolean;
     enableGrayscaleButton?: boolean;
+    localStoreAnnotation?: boolean;
+    watermarkdemo?:boolean;
+    forceLogin?:boolean;
+    
     /*  */
     logoUrl?: string;
+    dateFormat?: IGuiDateFormat;
 }
 
    
@@ -203,7 +224,7 @@ var UIConfig = (function() {
 
 
     let ConfigJSON = {
-        "UIConfig" : {
+         "UIConfig" : {
             
                 "canFileOpen": true,
                 "canSaveFile": true,
@@ -212,12 +233,32 @@ var UIConfig = (function() {
                 "canExport": true,
                 "canAnnotate": true,
                 "canCompare": true,
-                "canSignature": true,
+                "canSignature": false,
                 "canConsolidate": true,
                 "convertPDFAnnots" : false,
-                "canLogin" : false,
-                "logoUrl": "/assets/images/logo.svg"
-            
+                "createPDFAnnotproxy" : false,
+                "canCollaborate": false,
+                "canLogin" : true,
+                "showmarkupZoom" : false,
+                "alwaysShowScaling" : false,
+                "showAnnotationsOnLoad" : false,
+                "localStoreAnnotation": false,
+                "disable2DVectorInfoButton" : false,
+                "watermarkdemo" : false,
+                "forceLogin" : false,
+                "logoUrl": "assets/images/logo.svg",
+                "dateFormat": {
+                  "locale": "en",
+                  "shortDate": "MMM d, yyyy",
+                  "longDate": "MMMM d, yyyy",
+                  "time": "h:mm a",
+                  "month": "MMM",
+                  "dateTime": "MMM d, yyyy h:mm a",
+                  "dateTimeWithoutYear": "MMM d, h:mm a",
+                  "dateMonthYear": "DD/MM/YYYY",
+                  "dateTimeWithConditionalYear": "MMM d, [yyyy] h:mm a",
+                  "dateTimeWithSeconds": "D/M/YYYY HH:mm:ss"
+              }
         },
         "UIStyles" : [
             

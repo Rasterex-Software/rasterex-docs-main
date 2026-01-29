@@ -7,6 +7,7 @@ These objects enable interaction between HTML GUI elements and the RxCore functi
 ### Example
 
 ```javascript
+
 RxCore.GUI_MarkupLayers.connect(function (markuplayers) {
   // Do stuff with markuplayers
 });

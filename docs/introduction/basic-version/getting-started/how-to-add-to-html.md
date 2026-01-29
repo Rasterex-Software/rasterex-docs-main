@@ -2,6 +2,20 @@
 title: How to add to HTML?
 ---
 
+### Default behaviour
+
+When setting up a minimal HTML page the following will work "out of the box".
+- Mouse wheel will perform zoom on single pages to where the mouse is pointing.
+- Mouse wheel will perform page scroll on multi-page documents.
+- Mouse wheel will perform zoom on 3D moodels to where the mouse is pointing.
+- Left mouse will grab the content and rotate around model center for 3D models.
+- Left mouse will grab the content and pan the page for single page drawings.
+- Left mouse will grab the content and pan the page vertically for multi-page documents.
+- Left mouse will select annotations if present.
+- Delete key will deleted selected annotations.
+
+### Minimal html implementation
+
 By default, the RxCore object will look for a div with ID `rxcontainer`. You can specify any div by passing its ID to the RxCore.initialize() method.
 
 Below is an example of minimal implementation of the Basic version.
