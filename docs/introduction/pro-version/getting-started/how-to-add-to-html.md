@@ -15,6 +15,15 @@ When setting up a minimal HTML page the following will work "out of the box".
 - Delete key will deleted selected annotations.
 
 
+### Prerequisites
+A client or server machine running IIS.
+In order to run the below example you must have first installed both the back-end and front-end installations.
+
+As an alternative you can get a minimum set of assets from our github instead of using the full front-end installation.
+
+[Assets github repository](https://github.com/Rasterex-Software/rxcore-web-assets)
+
+Setup documentation for IIS is included in the github repository.
 
 
 ### Minimal html implementation
@@ -120,7 +129,8 @@ The below example will work if the html file is located in the web root folder.
             var drawing = "C:\\\\Rasterex\\\\Upload\\\\040915 MOBSLAKT.pdf";
             var canvdim = {
                 offsetWidth: 0,
-                offsetHeight: 0
+                offsetHeight: 0,
+                absolute : false
             };
 
             RxCore.initialize(canvdim);

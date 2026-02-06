@@ -1,9 +1,14 @@
 ---
-title: Initialize Viewer
+title: Initialize layout
 ---
 
-### Initialize Viewer
-To initialize the web viewer with the correct layout settings:
+### Initialize
+In a minimum implementation some core elements are created.
+These are :
+- Several canvases that are used for display, annotations and measurement.
+- At least one Iframe used for PDF display.
+
+To initialize the RxCore library with the correct layout settings:
 
 ```typescript
 RxCore.initialize(layout, divid, class);
@@ -72,6 +77,6 @@ In this case the position of the canvas will have to be specified using styleshe
 
 See a full example of implementation here.
 
-[HTML exmaple](../basic-version/getting-started/how-to-add-to-html)
+[HTML exmaple](../pro-version/getting-started/how-to-add-to-html)
 
 

@@ -1,15 +1,18 @@
 Connection callback that is called when a selected markup is unselected.
 
 ### Callback Parameters
-- **Markup**: Markup object.
+- **Markup**: Markup object. *See [markup object](../../markup-methods/intro) for information on properties and methods.*
+
+### Example
 
 ```javascript
-Markup {
-    type: number; // Markup type
-    subtype: number; // Markup subtype
-    alternative: number; // Markup alternative
-    color: color; // Markup color
-    fontname: string; // Font name
-    linewidth: number; // Width of markup object.
-}
+RxCore.GUI_MarkupUnselect.connect(function (markup) {
+
+
+    console.log("markup was un-selected", markup.markupnumber)
+
+  
+});
 ```
+
+

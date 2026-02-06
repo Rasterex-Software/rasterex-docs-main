@@ -7,13 +7,17 @@ Callback event that gives a list of markup objects when markup is changed and wh
 ### Callback Parameters
 - **Markuplist**: Array of markup objects.
 
+### Markup object
+[markup object](../../markup-methods/intro)
+
+
+### Example
+
 ```javascript
-Markup {
-    type: number; // Markup type
-    subtype: number; // Markup subtype
-    alternative: number; // Markup alternative
-    color: color; // Markup color
-    fontname: string; // Font name
-    linewidth: number; // Width of markup object.
-}
+RxCore.GUI_Markuplist.connect(function (Markuplist) {
+
+    console.log("There are ", Markuplist.length, "markup objects" );
+   
+  
+});
 ```

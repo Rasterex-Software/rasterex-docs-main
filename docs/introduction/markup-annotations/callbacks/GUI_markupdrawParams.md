@@ -2,3 +2,13 @@ When setting markup dimensions using either `applyAngleLength`, `applyAngleLengt
 
 ### Callback Parameters
 - **lengthangle**: An object with different properties depending on the markup object and the method used.
+
+### Example
+
+```javascript
+RxCore.GUI_markupdrawParams.connect(function (lengthangle) {
+
+    console.log("length angle object", lengthangle);
+  
+});
+```

@@ -1,4 +1,4 @@
-Activates or turns off the `GUI_2DBlockInfoPos` callback when moving the mouse over 2D vector polygons.
+Activates or turns off the [GUI_2DBlockInfoPos](../callbacks/GUI_2DBlockInfoPos) callback when moving the mouse over 2D vector polygons.
 
 ### Syntax
 

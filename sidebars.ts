@@ -61,6 +61,14 @@ const sidebars: SidebarsConfig = {
 
         },
         {
+          type: 'category',
+          label: 'Core Concepts',
+          items: [
+            'introduction/callbackConnectionObject',
+            'introduction/initializeandlayout'
+          ],
+        },
+        {
           type: "category",
           label: "Developer Guide",
           items : [
@@ -73,90 +81,7 @@ const sidebars: SidebarsConfig = {
             
           ],
         },
-        {
-          type: "category",
-          label: "Rasterex Web Viewer",
-          items :[
-            "introduction/rasterex_web_viewer/webviewer",
-            {
-              type: "category",
-              label: "User Guide",
-              items: [
-                {
-                  type: "category",
-                  label: "General Layout Navigation",
-                  items: [
-                    "introduction/rasterex_web_viewer/user-guide/general-layout/generalLayoutNavigation",
-                    "introduction/rasterex_web_viewer/user-guide/general-layout/topNavigationMenu",
-                    // "introduction/user-guide/general-layout/sideNavigationMenu",
-                    "introduction/rasterex_web_viewer/user-guide/general-layout/toolbar",
-                    "introduction/rasterex_web_viewer/user-guide/general-layout/annotate-toolbar",
-                  ],
-                },
-                {
-                  type: "category",
-                  label: "Annotate Mode",
-                  items: [
-                    "introduction/rasterex_web_viewer/user-guide/annotate-mode/annotate-mode",
-                    "introduction/rasterex_web_viewer/user-guide/annotate-mode/Comment-list",
-                    "introduction/rasterex_web_viewer/user-guide/annotate-mode/annotations-shortcut-menu",
-                    {
-                      type: "category",
-                      label: "Annotate Editing",
-                      items: [
-                        "introduction/rasterex_web_viewer/user-guide/annotate-mode/annotate-editing",
-                        "introduction/rasterex_web_viewer/user-guide/annotate-mode/text-annotation-editing",
-                        "introduction/rasterex_web_viewer/user-guide/annotate-mode/callout-annotation-editing",
-                        "introduction/rasterex_web_viewer/user-guide/annotate-mode/highlighter-editing",
-                        "introduction/rasterex_web_viewer/user-guide/annotate-mode/freehand-editing",
-                        "introduction/rasterex_web_viewer/user-guide/annotate-mode/shape-annotation-editing",
-                        "introduction/rasterex_web_viewer/user-guide/annotate-mode/arrow-annotation-editing",
-                        "introduction/rasterex_web_viewer/user-guide/annotate-mode/measure-annotation",
-                        "introduction/rasterex_web_viewer/user-guide/annotate-mode/count-annotation-editing",
-                        //"introduction/user-guide/annotate-mode/erase-annotation-editing",
-                        "introduction/rasterex_web_viewer/user-guide/annotate-mode/markup-link-management",
-                        "introduction/rasterex_web_viewer/user-guide/annotate-mode/annotation-info-modals",
-                        "introduction/rasterex_web_viewer/user-guide/annotate-mode/custom-color-picker",
-                      ],
-                    },
-                    "introduction/rasterex_web_viewer/user-guide/annotate-mode/saving-the-annotations",
-                  ],
-                },
-                {
-                  type: "category",
-                  label: "Compare Mode",
-                  items: [
-                    "introduction/rasterex_web_viewer/user-guide/compare-mode/intro",
-                    "introduction/rasterex_web_viewer/user-guide/compare-mode/create-compare",
-                    "introduction/rasterex_web_viewer/user-guide/compare-mode/compare-mode",
-                    "introduction/rasterex_web_viewer/user-guide/compare-mode/edit-comparison",
-                    "introduction/rasterex_web_viewer/user-guide/compare-mode/align-comparison",
-                    "introduction/rasterex_web_viewer/user-guide/compare-mode/revision-cloud",
-                    "introduction/rasterex_web_viewer/user-guide/compare-mode/tutorial",
-                    "introduction/rasterex_web_viewer/user-guide/compare-mode/save",
-                  ],
-                },
-                // {
-                //   type: "category",
-                //   label: "Signing Module",
-                //   items: [
-                //     "introduction/user-guide/signing-module/intro",
-                //     "introduction/user-guide/signing-module/signing-field-identification",
-                //     "introduction/user-guide/signing-module/creating-signature",
-                //     "introduction/user-guide/signing-module/viewing-and-editing-signature",
-                //     "introduction/user-guide/signing-module/placing-signature",
-                //   ],
-                // },
-                "introduction/rasterex_web_viewer/user-guide/signing-module/other-menus",
-              ],
-            },            
-            "introduction/rasterex_web_viewer/iframe",
-            "introduction/rasterex_web_viewer/controllingUI",
-            "introduction/rasterex_web_viewer/collaboration",
-
-          ],
-  
-        },
+        
 
         
         /* {
@@ -167,6 +92,8 @@ const sidebars: SidebarsConfig = {
             "introduction/rasterex_web_viewer",
           ],
         }, */
+        
+
         
         {
           type: "category",
@@ -205,19 +132,24 @@ const sidebars: SidebarsConfig = {
                     "introduction/file/methods/restoreDefault",
                     "introduction/file/methods/RxCoreMulti",
                     "introduction/file/methods/selectMarkUp",
+                    "introduction/file/methods/setActiveFile",
+                    "introduction/file/methods/setActiveFileEx",
                     "introduction/file/methods/setAuthorization",
                     "introduction/file/methods/setConfiguration",
                     "introduction/file/methods/setinitFile",
                     "introduction/file/methods/setLayout",
+                    "introduction/file/methods/setMarkup3DSavefile",
                     "introduction/file/methods/setdisplayBackground",
+                    "introduction/file/methods/setrxprintdiv",
                     "introduction/file/methods/setscrollZoomKey",
+                    "introduction/file/methods/setViews3DSavefile",
                     "introduction/file/methods/useCredentials",
                     "introduction/file/methods/useCompanyFeature",
                     "introduction/file/methods/useFixedScale",
                     "introduction/file/methods/xmlurl",
                     "introduction/file/methods/xmlurlEx",
                     "introduction/file/methods/getOpenFiles",
-                    "introduction/file/methods/getOpenFileList",
+                    "introduction/file/methods/getOpenFilesList",
                     "introduction/file/methods/openFile",
                     "introduction/file/methods/openFileCustom",
                     "introduction/file/methods/openFileLayouts",
@@ -288,6 +220,8 @@ const sidebars: SidebarsConfig = {
                     "introduction/document/callbacks/GUI_NumMatches",
                     "introduction/document/callbacks/GUI_NumMatchesMarkup",
                     "introduction/document/callbacks/GUI_PrintRect",
+                    "introduction/document/callbacks/onPrintComplete",
+                    "introduction/document/callbacks/onPrintProgress",
                     "introduction/document/callbacks/GUI_State",
                   ],
                 },
@@ -502,8 +436,12 @@ const sidebars: SidebarsConfig = {
                     "introduction/document/methods/markupTextSearch",
                     "introduction/markup-annotations/methods/markUpUndo",
                     "introduction/markup-annotations/methods/markUpUserDialog",
+                    "introduction/markup-annotations/methods/measureArc",
                     "introduction/markup-annotations/methods/modifyMarkup",
                     "introduction/markup-annotations/methods/moveLabelEnable",
+                    "introduction/markup-annotations/methods/movetoBack",
+                    "introduction/markup-annotations/methods/movetoFront",
+                    
                     "introduction/markup-annotations/methods/nextMarkup",
                     "introduction/markup-annotations/methods/noteFocus",
                     "introduction/markup-annotations/methods/pasteClipboard",
@@ -561,6 +499,9 @@ const sidebars: SidebarsConfig = {
 
                     "introduction/markup-annotations/methods/spaceEdit",
 
+                    "introduction/markup-annotations/methods/toggleCycleSelect",
+                    
+
                     "introduction/markup-annotations/methods/unSelectAllMarkup",
 
                     "introduction/markup-annotations/methods/unSelectMarkupbyGUID",
@@ -591,6 +532,8 @@ const sidebars: SidebarsConfig = {
                     
 
                     "introduction/markup-annotations/callbacks/GUI_Markup",
+                    "introduction/markup-annotations/callbacks/GUI_MarkupChanged",
+                    
                     "introduction/markup-annotations/callbacks/GUI_MarkupIndex",
                     "introduction/markup-annotations/callbacks/GUI_MarkupAreaEdit",
                     "introduction/markup-annotations/callbacks/GUI_markupdrawParams",
@@ -615,7 +558,9 @@ const sidebars: SidebarsConfig = {
                     "introduction/markup-annotations/callbacks/GUI_UndoRedoEmpty",
                     "introduction/markup-annotations/callbacks/GUI_Users",
                   ],
+                  
                 },
+                "introduction/markup-annotations/text-markup-editing-model"
               ],
             },
             {
@@ -757,6 +702,7 @@ const sidebars: SidebarsConfig = {
                     "introduction/cad/methods/getHatches",
                     "introduction/cad/methods/keepVectorColor",
                     "introduction/cad/methods/markupAddBlockText",
+                    "introduction/cad/methods/overrideLinewidth",
                     "introduction/cad/methods/pickPolygon",
                     "introduction/cad/methods/resetBlocks",
                     "introduction/cad/methods/restoreBlockStates",
@@ -986,6 +932,7 @@ const sidebars: SidebarsConfig = {
                         "introduction/pro-version/pdf/methods/getdivcontainer",
                         "introduction/pro-version/pdf/methods/getFoxitlframeID",
                         "introduction/pro-version/pdf/methods/getfoxitThumbnail",
+                        "introduction/pro-version/pdf/methods/getPDFBookmarks",
                         "introduction/pro-version/pdf/methods/getPDFintialScale",
                         "introduction/pro-version/pdf/methods/importFDF",
                         "introduction/pro-version/pdf/methods/removeWatermarkFromAllPages",
@@ -1005,7 +952,8 @@ const sidebars: SidebarsConfig = {
                       type: "category",
                       label: "Callback Events",
                       items: [
-                        "introduction/pro-version/pdf/callbacks/GUI_TextCopied",
+                        "introduction/pro-version/pdf/callbacks/GUI_PDFBookmarks",
+                        "introduction/pro-version/pdf/callbacks/GUI_TextCopied"
                       ],
                     },
                   ],
@@ -1079,6 +1027,90 @@ const sidebars: SidebarsConfig = {
 
           ],
         },
+        {
+          type: "category",
+          label: "Rasterex Web Viewer",
+          items :[
+            "introduction/rasterex_web_viewer/webviewer",
+            {
+              type: "category",
+              label: "User Guide",
+              items: [
+                {
+                  type: "category",
+                  label: "General Layout Navigation",
+                  items: [
+                    "introduction/rasterex_web_viewer/user-guide/general-layout/generalLayoutNavigation",
+                    "introduction/rasterex_web_viewer/user-guide/general-layout/topNavigationMenu",
+                    // "introduction/user-guide/general-layout/sideNavigationMenu",
+                    "introduction/rasterex_web_viewer/user-guide/general-layout/toolbar",
+                    "introduction/rasterex_web_viewer/user-guide/general-layout/annotate-toolbar",
+                  ],
+                },
+                {
+                  type: "category",
+                  label: "Annotate Mode",
+                  items: [
+                    "introduction/rasterex_web_viewer/user-guide/annotate-mode/annotate-mode",
+                    "introduction/rasterex_web_viewer/user-guide/annotate-mode/Comment-list",
+                    "introduction/rasterex_web_viewer/user-guide/annotate-mode/annotations-shortcut-menu",
+                    {
+                      type: "category",
+                      label: "Annotate Editing",
+                      items: [
+                        "introduction/rasterex_web_viewer/user-guide/annotate-mode/annotate-editing",
+                        "introduction/rasterex_web_viewer/user-guide/annotate-mode/text-annotation-editing",
+                        "introduction/rasterex_web_viewer/user-guide/annotate-mode/callout-annotation-editing",
+                        "introduction/rasterex_web_viewer/user-guide/annotate-mode/highlighter-editing",
+                        "introduction/rasterex_web_viewer/user-guide/annotate-mode/freehand-editing",
+                        "introduction/rasterex_web_viewer/user-guide/annotate-mode/shape-annotation-editing",
+                        "introduction/rasterex_web_viewer/user-guide/annotate-mode/arrow-annotation-editing",
+                        "introduction/rasterex_web_viewer/user-guide/annotate-mode/measure-annotation",
+                        "introduction/rasterex_web_viewer/user-guide/annotate-mode/count-annotation-editing",
+                        //"introduction/user-guide/annotate-mode/erase-annotation-editing",
+                        "introduction/rasterex_web_viewer/user-guide/annotate-mode/markup-link-management",
+                        "introduction/rasterex_web_viewer/user-guide/annotate-mode/annotation-info-modals",
+                        "introduction/rasterex_web_viewer/user-guide/annotate-mode/custom-color-picker",
+                      ],
+                    },
+                    "introduction/rasterex_web_viewer/user-guide/annotate-mode/saving-the-annotations",
+                  ],
+                },
+                {
+                  type: "category",
+                  label: "Compare Mode",
+                  items: [
+                    "introduction/rasterex_web_viewer/user-guide/compare-mode/intro",
+                    "introduction/rasterex_web_viewer/user-guide/compare-mode/create-compare",
+                    "introduction/rasterex_web_viewer/user-guide/compare-mode/compare-mode",
+                    "introduction/rasterex_web_viewer/user-guide/compare-mode/edit-comparison",
+                    "introduction/rasterex_web_viewer/user-guide/compare-mode/align-comparison",
+                    "introduction/rasterex_web_viewer/user-guide/compare-mode/revision-cloud",
+                    "introduction/rasterex_web_viewer/user-guide/compare-mode/tutorial",
+                    "introduction/rasterex_web_viewer/user-guide/compare-mode/save",
+                  ],
+                },
+                // {
+                //   type: "category",
+                //   label: "Signing Module",
+                //   items: [
+                //     "introduction/user-guide/signing-module/intro",
+                //     "introduction/user-guide/signing-module/signing-field-identification",
+                //     "introduction/user-guide/signing-module/creating-signature",
+                //     "introduction/user-guide/signing-module/viewing-and-editing-signature",
+                //     "introduction/user-guide/signing-module/placing-signature",
+                //   ],
+                // },
+                "introduction/rasterex_web_viewer/user-guide/signing-module/other-menus",
+              ],
+            },            
+            "introduction/rasterex_web_viewer/iframe",
+            "introduction/rasterex_web_viewer/controllingUI",
+            "introduction/rasterex_web_viewer/collaboration",
+
+          ],
+  
+        },        
         {
           type: "category",
           label: "DB back-end",
