@@ -1,11 +1,9 @@
-## changeSnapState
-
 Turns snap-to-vector on or off for markup and measurement drawing.
 
 ### Syntax
 
 ```typescript
-RxCore.changeSnapState(state)
+    RxCore.changeSnapState(state);
 ```
 
 ### Parameters

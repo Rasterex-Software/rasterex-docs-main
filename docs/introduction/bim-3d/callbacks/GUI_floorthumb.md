@@ -1,10 +1,10 @@
 Callback event that is called when a generic floorplan image is loaded.
 
 ### Callback Parameters
-- **Index**: Thumbnail index.
-- **Thumbnail**: Thumbnail object.
+- `Index`: **number**- Thumbnail index.
+- `Thumbnail`: **object**- Thumbnail object.
 
-#### JavaScript Example
+#### Thumbnail
 ```javascript
 Thumbnail {
     BScale: double; // Background scale
@@ -30,4 +30,13 @@ Thumbnail {
     thumbwidth: integer; // Thumbnail width
     width: integer; // Image width
 }
+```
+### Example
+
+```javascript
+    RxCore.GUI_floorthumb.connect(function(Index, Thumbnail) {
+        
+        console.log("Thumbnail for Floor ", Index );
+
+    });
 ```

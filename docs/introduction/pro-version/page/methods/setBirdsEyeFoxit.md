@@ -1,5 +1,8 @@
 Sets the bitmap to be used with the birdseye overview for the current page.
 
+### Version
+(Pro version only)
+
 ### Syntax
 
 ```typescript

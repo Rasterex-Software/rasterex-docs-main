@@ -1,5 +1,8 @@
 Used with Foxit integration to synchronize the RxView360 markup display with the Foxit PDF scrollbar positions.
 
+### Version
+(Pro version only)
+
 ### Syntax
 
 ```typescript

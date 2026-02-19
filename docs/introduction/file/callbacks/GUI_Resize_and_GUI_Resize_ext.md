@@ -4,8 +4,28 @@ title: GUI_Resize and GUI_Resize_ext
 
 Callback called when the canvas is resized. The `ext` version is triggered when the resize is initiated from an external source.
 
-###Callback Parameters
+### Callback Parameters
 
-- **canvassize**: Object containing the width and height of the canvas.
+- `canvassize`: **object** - Object containing the width and height of the canvas.
   - `canvassize.w`: Width of the canvas.
   - `canvassize.h`: Height of the canvas.
+
+
+  ### Example
+
+```javascript
+
+  RxCore.GUI_Resize.connect(function(canvassize){
+    console.log(canvassize);
+
+  });
+
+  RxCore.GUI_Resize_ext.connect(function(canvassize){
+    console.log(canvassize);
+
+  });
+
+
+```
+
+

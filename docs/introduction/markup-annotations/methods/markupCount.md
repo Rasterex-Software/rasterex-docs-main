@@ -3,7 +3,7 @@ Use this method to turn on/off the markup count tool. This enables the user to c
 ### Syntax
 
 ```typescript
-RxCore.markupCount(selected, shape)
+  RxCore.markupCount(selected, shape);
 ```
 
 ### Parameters

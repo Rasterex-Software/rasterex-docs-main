@@ -3,7 +3,7 @@ Turn on/off orthographic locking when drawing measurements and annotations. When
 ### Syntax
 
 ```typescript
-RxCore.useOrtho(onoff, degree)
+    RxCore.useOrtho(onoff, degree);
 ```
 
 ### Parameters

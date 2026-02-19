@@ -1,5 +1,7 @@
 Call this method to make sure the marking of found text during text search is refreshed.
 
+### Version
+(Pro version only)
 
 ### Syntax
 

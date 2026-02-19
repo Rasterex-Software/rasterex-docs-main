@@ -2,9 +2,8 @@ Connection callback that is called when a file is loaded. Used to display page i
 
 ### Callback Parameters
 
-- **Thumbnail**: An object containing thumbnail information.
+- `Thumbnail`: **object**: An object containing thumbnail information.
 
-### JavaScript
 
 ```javascript
 Thumbnail {
@@ -18,3 +17,27 @@ Thumbnail {
     draw: function used to draw the thumbnail,
 }
 ```
+
+### Example
+
+```javascript
+
+RxCore.GUI_pagethumb.connect(function(Thumbnail){
+
+        var mythumbcanvas = document.createElement('canvas');
+        var ctx = mythumbcanvas.getContext('2d');
+
+        mythumbcanvas.width = Thumbnail.thumbnail.width;
+        mythumbcanvas.height = Thumbnail.thumbnail.height;
+
+
+        RxCore.markUpRedraw();
+
+        Thumbnail.draw(ctx);
+
+});
+
+    
+```
+
+

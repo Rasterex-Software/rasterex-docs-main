@@ -3,7 +3,9 @@ Saves markup to the server.
 ### Syntax
 
 ```typescript
-RxCore.markUpSave()
+    
+    RxCore.markUpSave();
+
 ```
 
 ### Parameters

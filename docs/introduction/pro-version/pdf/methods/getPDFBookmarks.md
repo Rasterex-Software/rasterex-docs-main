@@ -2,6 +2,8 @@ Used with Foxit integration to get bookmark objects for PDF documents.
 
 This is used in combination with [GUI_PDFBookmarks](../callbacks/GUI_PDFBookmarks.md) that return the bookmark array.
 
+### Version
+(Pro version only)
 
 ### Syntax
 

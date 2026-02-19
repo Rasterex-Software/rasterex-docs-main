@@ -3,7 +3,7 @@ Turns on/off the markup dimension tool. This enables the user to draw a markup d
 ### Syntax
 
 ```typescript
-RxCore.markUpDimension(selected, type)
+  RxCore.markUpDimension(selected, type);
 ```
 
 ### Parameters

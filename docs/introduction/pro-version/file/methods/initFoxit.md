@@ -1,5 +1,9 @@
 Used from the Foxit class event `jrLicenseSuccess` to notify RxCore that Foxit is ready for use through the `RxCore.GUI` `FoxitReady` callback.
 
+### Version
+(Pro version only)
+
+
 ### Syntax
 
 ```typescript

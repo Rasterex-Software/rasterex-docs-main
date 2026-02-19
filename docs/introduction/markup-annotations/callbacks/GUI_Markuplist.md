@@ -4,11 +4,12 @@ Callback event that gives a list of markup objects when markup is changed and wh
 - **getDisplayName()**: Returns the markup signature for the current user.
 - **getDisplayDate()**: Returns a date string for a given date JavaScript value.
 
-### Callback Parameters
-- **Markuplist**: Array of markup objects.
 
-### Markup object
-[markup object](../../markup-methods/intro)
+### Callback Parameters
+- `Markuplist`: **array of markup objects** The loaded markup objects in an array.
+
+*See [markup object](../../markup-methods/intro) for information on properties and methods.*
+
 
 
 ### Example

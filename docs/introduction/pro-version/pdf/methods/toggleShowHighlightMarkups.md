@@ -1,5 +1,7 @@
 Turns on/off the display of text search marking rectangles on text matching the current text search expression.
 
+### Version
+(Pro version only)
 
 ### Syntax
 

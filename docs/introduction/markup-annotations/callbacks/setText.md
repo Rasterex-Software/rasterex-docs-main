@@ -3,7 +3,7 @@ Alternative reference to GUI_Textdiag setText method.
 ### Syntax
 
 ```typescript
-RxCore.setText()
+    RxCore.setText();
 ```
 
 ### Parameters

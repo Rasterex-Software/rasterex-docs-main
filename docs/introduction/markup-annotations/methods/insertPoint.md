@@ -3,7 +3,7 @@ Sets the drawing operation for markup edit to insert a new point by selecting a 
 ### Syntax
 
 ```typescript
-RxCore.insertPoint()
+    RxCore.insertPoint();
 ```
 
 ### Parameters

@@ -15,3 +15,15 @@ Zoomparams {
     Type: 5; // Zoom height
 }
 ```
+### Example
+
+  ```javascript
+    RxCore.GUI_ZoomUpdate(function(Zoomparams) {
+
+
+        console.log("zoom performed ",  Zoomparams);
+
+    });
+
+```
+

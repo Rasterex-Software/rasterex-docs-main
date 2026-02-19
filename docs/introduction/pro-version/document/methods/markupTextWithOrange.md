@@ -3,6 +3,9 @@ Takes an item from Text search results array returned using `RxCore.GUI_Document
 
 Text search results are returned with `RxCore.GUI_DocumentSearch` when using `RxCore.documentTextSearch`.
 
+### Version
+(Pro version only)
+
 ### Syntax
 
 ```typescript

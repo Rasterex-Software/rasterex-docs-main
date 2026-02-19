@@ -1,5 +1,8 @@
 If the PDF file has been modified in the client using page rotation, deletion, swapping or adding.
-Or if a watermark has been added to pages in the document, use this method to download the result to your machine.
+Or if a watermark has been added to pages in the document, use this method to download the result to your machine. 
+
+### Version
+(Pro version only)
 
 
 ### Syntax

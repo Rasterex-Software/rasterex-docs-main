@@ -1,4 +1,8 @@
-### Add Watermark to a Single Page
+Add Watermark to a Single Page.
+
+### Version
+(Pro version only)
+
 
 ~~~js
 // Page number is 0-indexed, so pageNumber 0 = page 1

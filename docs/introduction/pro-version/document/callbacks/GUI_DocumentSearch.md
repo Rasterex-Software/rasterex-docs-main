@@ -1,6 +1,9 @@
 This callback event is triggered when `RxCore.documentTextSearch` is used.
 
-###Callback Parameters
+### Version
+(Pro version only)
+
+### Callback Parameters
 
 - **searchMatches**: An object that contains an array of objects that represnts the search result.
 
@@ -25,7 +28,7 @@ function onGetMatches(searchMatches) {
                     })  
             })
             
-            RxCore.markupSearchResult(); //highlights the text that matches the search
+            RxCore.forcetextsearchmarker(); //highlights the text that matches the search
 
             console.log(searchMatches)
 

@@ -1,5 +1,8 @@
 Used with Foxit integration to trigger the `GUI_State` callback event.
 
+### Version
+(Pro version only)
+
 ### Syntax
 
 ```typescript

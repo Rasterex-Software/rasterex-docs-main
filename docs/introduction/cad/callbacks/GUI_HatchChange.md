@@ -3,7 +3,6 @@ Callback returns a fill object when fill is applied or removed.
 ### Callback Parameters
 - **Fillstyle**: A fill style object.
 
-#### JavaScript Example
 ```javascript
 Fillstyle {
     type: 'hatch'; // Type of fill
@@ -14,4 +13,16 @@ Fillstyle {
     description: szdescript; // Description of the fill style
     inuse: false; // Indicates if the fill style is currently in use
 }
+```
+
+#### Example
+
+```javascript
+
+RxCore.GUI_HatchChange.connect(function(Fillstyle){
+
+    console.log("Pattern applied ", Fillstyle.description);
+
+});
+
 ```

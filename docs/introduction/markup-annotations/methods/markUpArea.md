@@ -3,7 +3,7 @@ Use this method to turn on/off the markup area tool. This enables the user to dr
 ### Syntax
 
 ```typescript
-RxCore.markUpArea(selected)
+    RxCore.markUpArea(selected);
 ```
 
 ### Parameters

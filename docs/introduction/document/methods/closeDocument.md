@@ -1,4 +1,4 @@
-Closes the currently active drawing or document.
+Closes the currently active drawing or document. We do however recommend using [closeDocumentEx](closeDocumentEx.md) instead that works asynchronously and returns a promise. 
 
 ### Syntax
 

@@ -3,7 +3,7 @@ Returns the scale label value for the current page.
 ### Syntax
 
 ```typescript
-RxCore.getCurrentPageScaleLabel()
+    RxCore.getCurrentPageScaleLabel();
 ```
 
 ### Parameters

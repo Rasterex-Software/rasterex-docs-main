@@ -1,7 +1,7 @@
 This callback returns state information when the visibility of a 3D part is changed.
 
 ### Callback Parameters
-- **PartInfo**: `Part3DObject` containing:
+- `PartInfo`: **object**: `Part3DObject` containing:
   ```javascript
   Part3DObject {
       name: string; // Name of part
@@ -11,11 +11,11 @@ This callback returns state information when the visibility of a 3D part is chan
 
 ### Example
 ```javascript
-GUI_3DPartInfo.connect(function(partinfo) {
-    if (partinfo.visible) {
-        console.log("part is visible");
-    } else {
-        console.log("part is hidden");
-    }
-});
+    RxCore.GUI_3DPartState.connect(function(PartInfo) {
+        if (partinfo.visible) {
+            console.log("part is visible");
+        } else {
+            console.log("part is hidden");
+        }
+    });
 ```

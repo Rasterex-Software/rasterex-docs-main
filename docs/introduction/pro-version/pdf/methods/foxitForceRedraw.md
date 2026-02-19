@@ -1,5 +1,8 @@
 Used with Foxit integration to force a redraw of the active PDF document.
 
+### Version
+(Pro version only)
+
 ### Syntax
 
 ```typescript

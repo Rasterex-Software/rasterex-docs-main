@@ -1,5 +1,8 @@
 Use this method to terminate and clear text searches created using `RxCore.documentTextSearch`.
 
+### Version
+(Pro version only)
+
 ### Syntax
 
 ```typescript

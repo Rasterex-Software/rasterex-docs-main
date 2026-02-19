@@ -1,5 +1,8 @@
 Used with `foxitintegration` to set the large PDF state for documents with many pages.
 
+### Version
+(Pro version only)
+
 ### Syntax
 
 ```typescript

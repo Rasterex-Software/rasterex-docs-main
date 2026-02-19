@@ -1,5 +1,8 @@
 Toggles the visibility of a PDF layer by its index.
 
+### Version
+(Pro version only)
+
 ### Syntax
 
 ```typescript

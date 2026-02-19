@@ -1,5 +1,8 @@
 Used with Foxit integration to set the position of Rasterex markup when using the scrollbars.
 
+### Version
+(Pro version only)
+
 ### Syntax
 
 ```typescript

@@ -3,7 +3,7 @@ Connection object that is called when right-clicking on the display canvas, whic
 ### Callback Parameters
 - **evt**: DOM event object for the display canvas.
 
-#### Example
+### Example
 ```javascript
 function GUI_ContextMenuEvt() {
     RxCore.GUI_ContextMenuEvt.connect(onContextMenu);

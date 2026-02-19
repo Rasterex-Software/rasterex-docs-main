@@ -1,8 +1,8 @@
 Used this method to upload the currently modified PDF to a specified URL.
 
 
-Requirements.
-
+### Version
+(Pro version only)
 RxCore version 35.2 or newer.
 Latest iframefoxit.js
 

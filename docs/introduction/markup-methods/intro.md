@@ -145,6 +145,28 @@ Retrieves a unique ID of the markup, if set.
 
 ---
 
+### Consolidate
+
+Consolidate the markup based on settings.
+
+- **Syntax**: `Markup.Consolidate(settingsobject)`
+- **Parameters**:
+  - `settingsobject`: Contains options for changing stroke color, text color, and layer.
+  - **Returns**: None
+- **Settings Object Structure**:
+
+  ```javascript
+  {
+      changeStrokeColor: boolean,
+      changeTextColor: boolean,
+      changeLayer: boolean,
+      strokecolor: html hex color,
+      textcolor: html hex color,
+      layer: integer
+  }
+  ```
+---
+
 ### ConsolidateList
 
 Adds markup objects to an array to consolidate them based on settings.

@@ -1,5 +1,8 @@
 Imports FDF files containing PDF markup using this method.
 
+### Version
+(Pro version only)
+
 ### Syntax
 
 ```typescript

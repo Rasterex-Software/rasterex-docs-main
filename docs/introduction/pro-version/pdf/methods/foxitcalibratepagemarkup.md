@@ -1,5 +1,8 @@
 Used with Foxit integration to set the position of Rasterex markup.
 
+### Version
+(Pro version only)
+
 ### Syntax
 
 ```typescript

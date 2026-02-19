@@ -1,9 +1,13 @@
 Used with Foxit integration to get the iframe of the currently activated Foxit document. This is used with `bringIframeToFront` to display the document.
 
+### Version
+(Pro version only)
+
+
 ### Syntax
 
 ```typescript
-RxCore.getFoxitlframeID(index)
+RxCore.getFoxitIframeID(index)
 ```
 
 ### Parameters

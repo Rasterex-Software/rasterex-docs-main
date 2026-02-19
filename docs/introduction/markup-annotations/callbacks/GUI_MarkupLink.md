@@ -1,20 +1,19 @@
 Callback event that returns the value of the link associated with a markup when the user clicks on a markup with a link enabled.
 
 ### Callback Parameters
-- **MarkupObject**: The markup object that was clicked on.
+- `MarkupObject`: **object** - The markup object that was clicked on.
+
+*Use [markup.getLink().link](../../markup-methods/intro#getlink) to retrieve the link string value.*
 
 ### Example
 
 ```javascript
-RxCore.GUI_MarkupLink.connect(function (Markup) {
+RxCore.GUI_MarkupLink.connect(function (MarkupObject) {
 
 
-    var link = Markup.getLink();
+    var link = MarkupObject.getLink();
     
   
 });
 ```
 
-
-
-*Use [markup.getLink().link](../../markup-methods/intro#getlink) to retrieve the link string value.*

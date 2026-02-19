@@ -1,5 +1,8 @@
 Imports a set of pages from a PDF source document to a currently open target PDF document.
 
+### Version
+(Pro version only)
+
 
 ### Syntax
 

@@ -2,12 +2,10 @@ If RxCore.convertPDFAnnots is turned on this modifies the process and create tem
 
 If RxCore.convertPDFAnnots is turned off this has no effect.
 
-Requirements.
-
+### Version
+(Pro version only)
 RxCore version 35.2 or newer.
 Latest iframefoxit.js
-
-
 
 ### Syntax
 

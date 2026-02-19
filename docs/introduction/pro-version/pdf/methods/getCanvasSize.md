@@ -1,5 +1,7 @@
 Used for Foxit integration to get the scaled canvas size given the current device pixel ratio.
 
+### Version
+(Pro version only)
 
 ### Syntax
 

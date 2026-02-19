@@ -1,5 +1,5 @@
 ---
-title: Scaling and calirbration
+title: Scaling and calibration
 ---
 
 Scaling in RxCore can operate on both pages and measurment objects.

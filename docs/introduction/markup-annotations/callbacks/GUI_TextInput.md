@@ -5,8 +5,8 @@ Connection callback used to connect markup text to an HTML input control.
 - **setText(text)**: Set the text of the selected text markup.
 
 ### Callback Parameters
-- **textrect**: A rectangle object indicating the position and size of the markup text box.
-- **operation**: Object with operation status values.
+- `textrect`: **object**: A rectangle object indicating the position and size of the markup text box.
+- `operation`: **object**: Object with operation status values.
 
 ```javascript
 operation = {
@@ -16,3 +16,16 @@ operation = {
     save: false
 };
 ```
+### Example
+
+```javascript
+    RxCore.GUI_TextInput.connect(function(textrect, operation)[
+
+        if(operation.create){
+            
+            console.log("new text annotation created");
+
+        }
+    ]);
+```
+

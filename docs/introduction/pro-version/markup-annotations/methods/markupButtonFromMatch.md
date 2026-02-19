@@ -1,5 +1,8 @@
 Can be used in combination with `RxCore.getTextRects()` text search to create a markup button at a position returned in the `RxCore.GUI_NumMathcesRect` callback.
 
+### Version
+(Pro version only)
+
 ### Syntax
 
 ```typescript

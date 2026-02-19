@@ -1,5 +1,9 @@
 Hides or displays the RxView360 display canvas when switching to the Foxit iframe.
 
+### Version
+(Pro version only)
+
+
 ### Syntax
 
 ```typescript

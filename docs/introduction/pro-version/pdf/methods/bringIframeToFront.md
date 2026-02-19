@@ -1,5 +1,8 @@
 Used with `foxitintegration` to display a PDF with Foxit when multiple files are open. Use `getFoxitlframeID` to retrieve the iframe name by the open file's index.
 
+### Version
+(Pro version only)
+
 ### Syntax
 
 ```typescript

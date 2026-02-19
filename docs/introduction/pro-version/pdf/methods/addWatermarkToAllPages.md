@@ -3,6 +3,8 @@
 The viewer provides functionality to add text watermarks to PDF documents.  
 You can add watermarks to all pages using the `addWatermarkToAllPages` method.
 
+### Version
+(Pro version only)
 
 ~~~js
 // Add a simple watermark with default settings

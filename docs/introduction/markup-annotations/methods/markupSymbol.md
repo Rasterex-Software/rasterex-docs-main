@@ -6,7 +6,7 @@ See developer guide on drag and drop.
 ### Syntax
 
 ```typescript
-RxCore.markupSymbol(selected)
+    RxCore.markupSymbol(selected);
 ```
 
 ### Parameters

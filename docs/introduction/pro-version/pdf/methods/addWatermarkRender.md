@@ -1,13 +1,13 @@
-
-
-*(Pro version only. Requires RxCore version **37.14** or newer.)*
-
 The `addWatermarkRender` method adds a **temporary (render-only)** watermark to the active document viewer.  
 This watermark is **not embedded** into the PDF and will **not appear** in exported or printed documents.  
 
 NB! this can not be removed using the `removeWatermarkFromAllPages` method.
 
 Use this for **dynamic, session-based, or user-specific** watermarks such as timestamps, usernames, or “For internal use only” labels.
+
+### Version
+(Pro version only)
+*(Requires RxCore version **37.14** or newer.)*
 
 #### Example
 

@@ -1,6 +1,7 @@
-Used with Foxit integration to synchronize the RxWeb SDK page extent for a PDF page. This method is called from Foxit page render event.
- 
+Used with Foxit integration to synchronize the RxWeb SDK page extent for a PDF page. This method is called from Foxit page render event. 
 
+### Version
+(Pro version only)
 
 ### Syntax
 

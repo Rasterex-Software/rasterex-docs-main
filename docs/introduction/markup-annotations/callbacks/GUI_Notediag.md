@@ -6,5 +6,17 @@ Connection callback that is called when the note tool is used.
 - **getText()**: Returns text of the selected note.
 
 ### Callback Parameters
-- **Notedata**: String - the text of the note.
-- **Readonly**: Boolean - if the text in the note is read-only or not.
+- `Notedata`: **String** - the text of the note.
+- `Readonly`: **Boolean** - if the text in the note is read-only this value is `true`.
+
+### Example
+
+```javascript
+RxCore.GUI_Notediag.connect(function (Notedata, Readonly) {
+
+    console.log("the text of the note", Notedata);
+    console.log("read only", Readonly);
+
+  
+});
+```

@@ -1,5 +1,8 @@
 Used with Foxit integration to update the page position x position when using page scrollbar.
 
+### Version
+(Pro version only)
+
 ### Syntax
 
 ```typescript

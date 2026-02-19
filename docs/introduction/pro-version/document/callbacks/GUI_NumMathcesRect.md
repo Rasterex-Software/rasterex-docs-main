@@ -1,6 +1,10 @@
-This callback event is triggered when `RxCore.getTextRects` is used.
+This callback event is triggered when [RxCore.getTextRects](../methods/getTextRects) is used.
 
-###Callback Parameters
+### Version
+(Pro version only)
+
+
+### Callback Parameters
 
 - **numMatches**: An object that contains a `matcharray` with the rectangle objects for the search.
 - **CurrentPage**: The page where the match was found.
@@ -8,7 +12,7 @@ This callback event is triggered when `RxCore.getTextRects` is used.
 ### Example:
 
 ```javascript
-RxCore.GUI_NumMatchesRect.connect(onGetMatches);
+RxCore.GUI_NumMathcesRect.connect(onGetMatches);
 
 function onGetMatches(numMatches, currentpage) {
   if (numMatches.matcharray.length > 0) {

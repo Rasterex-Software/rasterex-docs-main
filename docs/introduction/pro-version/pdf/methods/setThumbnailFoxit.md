@@ -1,5 +1,8 @@
 Used with Foxit integration to set a page thumbnail from the Foxit thumbnail function.
 
+### Version
+(Pro version only)
+
 ### Syntax
 
 ```typescript

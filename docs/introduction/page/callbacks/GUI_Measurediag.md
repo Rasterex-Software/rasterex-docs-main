@@ -16,3 +16,15 @@ Measureresult {
     area: number; // Measured area.
 }
 ```
+
+### Example
+
+```javascript
+
+    RxCore.GUI_Measurediag.connect(function(Measureresult){
+
+        console.log(Measureresult);
+
+    })
+
+```

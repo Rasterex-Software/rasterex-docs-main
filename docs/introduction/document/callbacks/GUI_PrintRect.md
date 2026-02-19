@@ -1,8 +1,12 @@
-Callback that returns a rectangle object for the selected area.
+Callback that returns a rectangle object for the selected area when using `RxCore.getDocRect` method.
 
-###Callback Parameters
 
-- **Rect**: Rectangle object with `x`, `y`, `w`, `h` parameters indicating the start point and the width and height of the rectangle in document coordinates.
+### Releated methods
+[RxCore.getDocRect](../methods/getDocRect.md)
+
+### Callback Parameters
+
+- `Rect`: **object**: Object with `x`, `y`, `w`, `h` parameters indicating the start point and the width and height of the rectangle in document coordinates.
 
 ### Example:
 

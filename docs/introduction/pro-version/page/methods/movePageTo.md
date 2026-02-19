@@ -1,4 +1,7 @@
-Call this method to move a page in a PDF document from one location to another using the page index and destination index.
+Call this method to move a page in a PDF document from one location to another using the page index and destination index. 
+
+### Version
+(Pro version only)
 
 ### Syntax
 

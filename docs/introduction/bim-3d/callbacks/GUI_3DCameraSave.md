@@ -1,7 +1,8 @@
 This callback is triggered when a new 3D view is created.
 
 ### Callback Parameters
-- **Cameraobject**: 3D view object containing the following properties:
+- `Cameraobject`: **object** - 3D view object containing the following properties:
+
   ```javascript
   var Cameraobject = {
       position: // An array representation of a 3D camera object.
@@ -17,6 +18,16 @@ This callback is triggered when a new 3D view is created.
       attributes: // Array of attributes associated with the 3D view.
   };
   ```
-- **fileActive**: Boolean indicating if the 3D model is the active document.
+- `fileActive`: **boolean**: Boolean indicating if the 3D model is the active document.
 
+
+  ```javascript
+
+    RxCore.GUI_3DCameraSave.connect(function(Cameraobject, fileActive){
+
+      console.log(Cameraobject);
+
+    });
+  
+  ```
 

@@ -8,7 +8,7 @@ See developer guide on drag and drop.
 ### Syntax
 
 ```typescript
-RxCore.markupImageStamp(selected)
+    RxCore.markupImageStamp(selected);
 ```
 
 ### Parameters

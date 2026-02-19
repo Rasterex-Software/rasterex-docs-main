@@ -7,7 +7,6 @@ Default values are
 - Area Unit : mm &sup2;
 
 
-
 ### Syntax
 
 ```typescript

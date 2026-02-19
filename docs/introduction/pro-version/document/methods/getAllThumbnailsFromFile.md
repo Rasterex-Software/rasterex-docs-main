@@ -3,6 +3,10 @@ The PDF would normally be a locally opened PDF file.
 
 The method returns a Promise that when resolved returns and array of ImageData objects.
 
+### Version
+(Pro version only)
+
+
 ### Syntax example.
 
 ```typescript

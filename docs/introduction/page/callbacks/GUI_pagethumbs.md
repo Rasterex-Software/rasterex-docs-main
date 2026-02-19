@@ -7,9 +7,7 @@ Connection callback that is called when a file is loaded. Used to display page i
 
 ### Callback Parameters
 
-- **thumbnails**: Array of thumbnail objects.
-
-### JavaScript
+- `thumbnails`: **array of thumbnail objects**: Array of thumbnail objects.
 
 ```javascript
 Thumbnail {
@@ -23,3 +21,18 @@ Thumbnail {
     draw: function used to draw the thumbnail,
 }
 ```
+
+
+### Example
+
+```javascript
+
+    RxCore.GUI_pagethumbs.connect(function(thumbnails){
+        console.log("thumbnail for page ",thumbnails[0].number);
+
+    });
+
+    
+```
+
+

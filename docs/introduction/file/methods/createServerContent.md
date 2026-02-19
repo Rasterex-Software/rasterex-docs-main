@@ -1,9 +1,12 @@
 Creates server content without actually opening the file. A callback event `GUI_CreationComplete` returns the XML file for the content once the process is complete.
 
+### Related callbacks
+[GUI_CreationComplete](../callbacks/GUI_CreationComplete.md)
+
 ### Syntax
 
 ```typescript
-RxCore.createServerContent(fileurl)
+  RxCore.createServerContent(fileurl);
 ```
 
 ### Parameters

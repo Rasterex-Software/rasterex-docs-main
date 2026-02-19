@@ -21,3 +21,13 @@ var symbolinfo = { type: 5, data: symbolPNGData, index: sname }; // PNG data for
 var symbolinfo = { type: 6, data: num };          // Additional symbol information
 ```
 **Use code with caution.**
+
+### Example
+
+```javascript
+
+    RxCore.GUI_Symbols.connect(function(symbolinfo){
+        console.log(symbolinfo);
+    });
+
+```

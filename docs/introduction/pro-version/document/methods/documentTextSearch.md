@@ -1,5 +1,8 @@
 Use this method to initiate and perform text searches. Call `RxCore.clearDocumentTextSearch` to terminate text search. Search results are returned using the `RxCore.GUI_DocumentSearch` callback event.
 
+### Version
+(Pro version only)
+
 ### Syntax
 
 ```typescript

@@ -3,7 +3,9 @@ Enables mouse event handling for the birdseye overview tool.
 ### Syntax
 
 ```typescript
-RxCore.birdseyetool()
+    
+    RxCore.birdseyetool();
+
 ```
 
 ### Parameters

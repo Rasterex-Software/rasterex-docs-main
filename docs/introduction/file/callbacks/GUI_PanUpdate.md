@@ -16,3 +16,15 @@ var pagerect = {
     h: // height of page,
 };
 ```
+
+### Example
+
+  ```javascript
+    RxCore.GUI_PanUpdate(function(x, y, pagerect) {
+
+
+        console.log("page moved ",  x, y, pagerect);
+
+    });
+
+```

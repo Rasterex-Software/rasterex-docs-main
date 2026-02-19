@@ -1,10 +1,7 @@
-
 This callback event is triggered when a zoom change has completed.
 
 ### Callback Parameters
 - **Zoomparams**: Zoom operation parameters.
-
-These can be used directly with the `zoomPageUpdate` method.
 
 ```javascript
 Zoomparams {
@@ -16,3 +13,17 @@ Zoomparams {
     Type: 5; // Zoom height
 }
 ```
+
+These can be used directly with the `zoomPageUpdate` method.
+
+```javascript
+    RxCore.GUI_ZoomUpdated(function(zoomparams, type) {
+
+        console.log("params " zoomparams);
+        console.log("type " type);
+
+    });
+
+```
+
+

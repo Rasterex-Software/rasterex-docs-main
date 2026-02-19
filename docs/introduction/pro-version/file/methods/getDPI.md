@@ -1,5 +1,8 @@
 Returns the screen resolution of the display device.
 
+### Version
+(Pro version only)
+
 ### Syntax
 
 ```typescript

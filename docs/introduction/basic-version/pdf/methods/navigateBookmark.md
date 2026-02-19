@@ -1,4 +1,4 @@
-Causes navigation to a PDF bookmark.
+Causes navigation to a PDF bookmark. (Basic version only)
 
 ### Syntax
 

@@ -1,10 +1,9 @@
-
 Initiates the Measurement Calibrate function, which can be used to set the scale of a document or drawing.
 
 ### Syntax
 
 ```typescript
-RxCore.calibrate(selected)
+    RxCore.calibrate(selected);
 ```
 
 ### Parameters

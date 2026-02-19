@@ -1,11 +1,14 @@
 Use this method to get information from a currently open document usually used to maintain a recent document list that can be used to open files from a recent document list that include a thumbnail.
 
+### Version
+(Pro version only)
+
 
 ### Syntax example.
 
 ```typescript
 
-    let FileInfo = RXCore.getCurrentFileInfo();
+    var FileInfo = RxCore.getCurrentFileInfo();
 
 ```
 

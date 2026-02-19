@@ -1,5 +1,3 @@
-## copyMarkUp
-
 Copies the selected markup to LocalStorage.
 
 ### Syntax

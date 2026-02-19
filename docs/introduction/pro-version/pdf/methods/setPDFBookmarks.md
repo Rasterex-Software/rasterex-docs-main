@@ -1,5 +1,7 @@
-
 Used with Foxit integration to set UI bookmarks lists.
+
+### Version
+(Pro version only)
 
 ### Syntax
 

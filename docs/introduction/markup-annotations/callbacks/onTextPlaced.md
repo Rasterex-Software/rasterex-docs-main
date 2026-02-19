@@ -1,4 +1,4 @@
-Alternative reference to `GUI_TextPlaced` callback.
+Alternative reference to `RxCore.GUI_Textdiag` callback.
 
 ### Syntax
 

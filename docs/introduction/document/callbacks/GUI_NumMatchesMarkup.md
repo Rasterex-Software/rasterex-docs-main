@@ -1,8 +1,8 @@
-This callback event is triggered when `RxCore.markupTextSearch` is used.
+This callback event is triggered when [RxCore.markupTextSearch](../methods/markupTextSearch.md) is used.
 
-###Callback Parameters
+### Callback Parameters
 
-- **numMatches**: Number of markups that match the search.
+- `numMatches`: **number**: Number of markups that match the search.
 
 ### Example:
 

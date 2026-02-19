@@ -1,5 +1,8 @@
 Used for Foxit integration to control where the Foxit iframe is located. Returns a div used by RxView360 to hold the Foxit iframe.
 
+### Version
+(Pro version only)
+
 ### Syntax
 
 ```typescript

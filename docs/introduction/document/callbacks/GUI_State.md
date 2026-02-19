@@ -1,4 +1,4 @@
-Connection callback that is called when RxView360 experiences a state change. This currently applies to file load and page change. (For page change, now use the new `GUI_Page` callback).
+Connection callback that is called when RxView360 experiences a state change. This currently applies to file load and page change. (For page change, use the `GUI_Page` callback).
 
 ### Callback Parameters
 - **stateobj**: Object containing state attributes.
@@ -12,4 +12,14 @@ stateobj = {
     numpages: number; // Total number of pages
     currentpage: number; // Currently active page
 }
+```
+
+### Example:
+
+```javascript
+    RxCore.GUI_State.connect(function (stateobj) {
+        
+        console.log("file has ", stateobj.numpages, " pages");
+        
+    });
 ```

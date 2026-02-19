@@ -1,6 +1,9 @@
 Connection object that is called when a file export is completed.
 
+### Callback Parameters
+- `fileURL`: **string** - URL to the file created.
 
+### Example
 
 ```typescript
     RxCore.GUI_exportComplete.connect(function (fileUrl) {
@@ -8,5 +11,3 @@ Connection object that is called when a file export is completed.
     });
 ```
 
-### Callback Parameters
-- **fileURL**: URL to the file created.

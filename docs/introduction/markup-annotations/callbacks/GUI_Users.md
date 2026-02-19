@@ -7,8 +7,7 @@ Connection callback called when the `RxCore.MarkupUserDialog` or `RxCore.MarkupT
 - **getCanChangeSign()**: Return true if the user signature can be changed.
 - **SetUserMarkupdisplay(numuser, state)**: Turn the display of markup for the user on/off.
 
-###Callback Parameters
-
+### Callback Parameters
 - **Userlist**: Array of user objects.
 
 ```javascript
@@ -16,4 +15,13 @@ User {
     display: Boolean; // user markup on/off
     DisplayName: string; // user display name
 }
+```
+### Example
+
+```javascript
+              RxCore.GUI_Users.connect(function(Userlist){
+                console.log("Users changed " Userlist);
+              });
+            
+            
 ```

@@ -1,5 +1,8 @@
 Call this method to remove a page from a PDF document using the page index.
 
+### Version
+(Pro version only)
+
 ### Syntax
 
 ```typescript

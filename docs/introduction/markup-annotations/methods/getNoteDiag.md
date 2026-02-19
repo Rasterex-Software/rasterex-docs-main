@@ -1,3 +1,5 @@
+
+
 Alternative reference to the `GUI_Notediag` callback.
 
 ### Syntax

@@ -1,5 +1,8 @@
 Used with Foxit integration to set UI layers lists.
 
+### Version
+(Pro version only)
+
 ### Syntax
 
 ```typescript

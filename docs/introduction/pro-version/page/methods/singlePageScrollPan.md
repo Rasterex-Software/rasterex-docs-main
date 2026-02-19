@@ -1,5 +1,8 @@
 Disable automatic zoom on the mouse wheel and enables vertical pan instead.
 
+### Version
+(Pro version only)
+
 ### Syntax
 
 ```typescript

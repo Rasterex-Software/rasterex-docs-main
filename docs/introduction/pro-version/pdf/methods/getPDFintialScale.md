@@ -1,5 +1,8 @@
 Gets the PDF scale used with Foxit integration.
 
+### Version
+(Pro version only)
+
 ### Syntax
 
 ```typescript

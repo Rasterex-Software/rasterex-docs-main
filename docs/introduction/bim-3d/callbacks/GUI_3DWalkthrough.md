@@ -5,4 +5,14 @@ This connection object displays a 3D navigation element on top of the canvas, us
 - **setWalkthroughGUI(setvisible)**: Toggles the visibility of the 3D navigation control element.
   
 ### Callback Parameters
-- **setvisible**: Boolean indicating if the 3D navigation control element should be visible (`true`) or hidden (`false`).
+- `setvisible`: **boolean**: Indicating if the 3D navigation control element should be visible (`true`) or hidden (`false`).
+
+
+### Example
+```javascript
+    RxCore.GUI_3DWalkthrough.connect(function(setvisible) {
+        
+        console.log(setvisible);
+        
+    });
+```

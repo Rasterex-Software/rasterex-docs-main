@@ -1,5 +1,3 @@
-
-
 Connection object that is called when a signature image download is completed.
 
 

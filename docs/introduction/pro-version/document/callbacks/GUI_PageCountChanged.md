@@ -1,9 +1,11 @@
 If a PDF document has pages added or removed this callback will return the new number of pages.
 
+### Version
+(Pro version only)
 
-###Callback Parameters
+### Callback Parameters
 
-- **numberofpages**: **number** — The number of pages in the currently active document after page remove or add.
+- `numberofpages`: **number** — The number of pages in the currently active document after page remove or add.
 
 
 ### Example:

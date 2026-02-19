@@ -1,7 +1,10 @@
 This callback event returns the bookmarks from a PDF document when calling the RxCore.getPDFBookmarks() method.
 
+### Version
+(Pro version only)
+
 ### Callback Parameters
-- **bookmarks**: An array of bookmark objects.
+- `bookmarks`: **array of objects**: An array of bookmark objects.
 
 
 ### Example:

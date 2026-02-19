@@ -1,5 +1,8 @@
 Terminates the operation started with `getTextRects` and resets values.
 
+### Version
+(Pro version only)
+
 ### Syntax
 
 ```typescript

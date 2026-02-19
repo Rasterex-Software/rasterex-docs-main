@@ -4,9 +4,8 @@ Connection object that is called when the `RxCore.FileInfoDialog` method is exec
 - **getUnitlabel()**: Returns the current measurement unit label (e.g., mm, cm, or inch).
 
 ### Callback Parameters
-- **FileInformation**: Object containing file information.
+- `FileInformation`: **object**: Object containing file information.
 
-#### JavaScript Example
 ```javascript
 FileInformation {
     FileFormat: string; // Current file format
@@ -23,3 +22,16 @@ FileInformation {
     OffsetY: number; // File internal offset y direction
     OriginalScale: number; // File internal scale
 }
+```
+
+### JavaScript Example
+
+```javascript
+
+    RxCore.GUI_FileInfo.connect(function(FileInformation){
+
+        console.log(FileInformation);
+
+    });
+
+```

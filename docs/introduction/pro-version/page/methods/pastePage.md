@@ -1,6 +1,9 @@
 Used in combination with [copyPage](./copyPage). If copyPage has been used on a page a blob representation of that page will exist that can be pasted into the same or another open PDF document.
 
 
+### Version
+(Pro version only)
+
 ### Syntax
 
 ```typescript

@@ -3,11 +3,14 @@ A blob representation will be created and accessible to use with [pastePage](./p
 
  Use to paste the page into the same or another open PDF document.
 
+### Version
+(Pro version only)
+
 
 ### Syntax
 
 ```typescript
-RxCore.copyPage(pageRange)
+RxCore.copyPage(pageRange);
 
 ```
 

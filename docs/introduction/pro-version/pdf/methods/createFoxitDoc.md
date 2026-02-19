@@ -1,5 +1,8 @@
 Creates a document object using Foxit integration.
 
+### Version
+(Pro version only)
+
 ### Syntax
 
 ```typescript

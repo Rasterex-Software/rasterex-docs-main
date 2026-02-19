@@ -3,5 +3,17 @@ Connection object that implements an event notifying when a client side compare 
 Can be used in combination with `RxCore.alignCompareEx` method.
 
 ### Callback Parameters
-- **fileindex**: Integer that can be used to identify the file in RxCore.
+- `fileindex`: **number**: Integer that can be used to identify the file in RxCore.
+
+### Example
+
+```typescript
+
+RxCore.GUI_compareLoadComplete.connect(function(fileindex){
+
+    console.log("File index ", fileindex);
+
+});
+
+```
 

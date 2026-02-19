@@ -1,9 +1,8 @@
 Turns on/off automatic conversion of PDF annotations to Rasterex Annotations.
-The original PDF annotations are removed from the PDF if usePDFAnnotProxy has not been set to true.
+The original PDF annotations are removed from the PDF if usePDFAnnotProxy has not been set to true. 
 
-
-Requirements.
-
+### Version
+(Pro version only)
 RxCore version 35.2 or newer.
 Latest iframefoxit.js
 
