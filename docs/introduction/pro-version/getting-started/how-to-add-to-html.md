@@ -7,7 +7,7 @@ title: How to add to HTML?
 When setting up a minimal HTML page the following will work "out of the box".
 - Mouse wheel will perform zoom on single pages to where the mouse is pointing.
 - Mouse wheel will perform page scroll on multi-page documents.
-- Mouse wheel will perform zoom on 3D moodels to where the mouse is pointing.
+- Mouse wheel will perform zoom on 3D models to where the mouse is pointing.
 - Left mouse will grab the content and rotate around model center for 3D models.
 - Left mouse will grab the content and pan the page for single page drawings.
 - Left mouse will grab the content and pan the page vertically for multi-page documents.
@@ -67,7 +67,7 @@ This file is included with the installation and can be located under assets/html
 
 `three.min.js`, `detector.js` and `GLTFLoader.js` – Are all used to handle and display 3D type formats.
 
-`jquery-2.1.0.min.js` – Currently used with the Foxit wrapper class for the PDF iframes.
+`jquery-2.1.0.min.js` – Currently only used for this demo page to load RxCore.
 
 The below example will work if the html file is located in the web root folder.
 

@@ -3,7 +3,7 @@ Returns an array of pen objects from a vector file if the format supports pen ta
 ### Syntax
 
 ```typescript
-RxCore.get2DVectorPentable()
+    RxCore.get2DVectorPentable();
 ```
 
 ### Parameters

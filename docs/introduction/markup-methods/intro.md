@@ -2,7 +2,9 @@
 title: Markup Object
 ---
 
-Some callbacks return a single or an array of markup objects. Information on these objects can be accessed using the following methods and properties.
+Markup object is also referred to as annotation object. Information on these objects can be accessed using the following methods and properties.
+
+Some callbacks return a single or an array of markup objects. 
 
 ## Markup Properties
 
@@ -10,13 +12,21 @@ Some callbacks return a single or an array of markup objects. Information on the
 Markup {
     x : number; // left position of the markup object
     y : number; //top position of the markup object
-    w : number; // right position or width depending on type
+    w : number; //right position or width depending on type
     h : number; //bottom position or height depending on type
+
+    xscaled : number; // left position of the markup object in current view coordinates,
+    yscaled : number; //top position of the markup object in current view coordinates,
+    wscaled : number; //right position or width in current view coordinates, depending on type
+    hscaled : number; //bottom position or height in current view coordinates, depending on type
+
+    points : array of number //the point coordinates for annotations like area, polygon and polyline
 
     type: number; // markup type
     subtype: number; // markup subtype
     alternative: number; // markup alternative
     color: color; // markup color
+    comments: array of comment objects //the array that holds the comments associated with the markup object.
     consolidated : boolean; //true if the markup has the consolidated flag set.
     fontname: string; // font name
     linewidth: number; // width of markup object
@@ -27,11 +37,18 @@ Markup {
     pagenumber: number; // 0-indexed page number for markup placement
     text: string; // value for text markups
     bisTextArrow: boolean; //true if the markup is an arrow for a callout.
+    bUseFixedScale : boolean; //Boolean value that affects how line thickness and labels are displayed.
+    bCanHaveLink : boolean; // if true the markup type supports links.
+    bhaveLink : boolean; // if true the markup has a link.
+    linkURL : string // if the markup has a link this property holds the link address.
+    hidevaluelabel : boolean; // if true and the markup has a label the label is not rendered.
     transparency: number; //a value between 0 and 100 that holds the transparency value
     rotation: number; //the rotation of the markup in degrees.
     uniqueID: string; // A unique identity for the markup object.
     textBoxConnected: markupobject; //if the markupobject is an arrow for a callout this is the connected text box connected to it.
     font: font object;
+    status : string; //a status string that can be used to set a status on the annotation object.
+    ismeasure : boolean; //if true the markup object is one of the types used for measurement.
 }
 ```
 
@@ -51,6 +68,53 @@ Adds custom attributes to the markup, retained when saved to file.
 - **Usage Caution**: This can permanently alter the markup if saved.
 
 ---
+
+### updateAttribute
+
+Updates a custom attributes on the markup, retained when saved to file.
+
+- **Syntax**: `Markup.updateAttribute(szName, szNewValue)`
+- **Parameters**:
+  - `szName`: Attribute name
+  - `szNewValue`: The new Attribute value 
+- **Returns**: None
+- **Usage Caution**: This can permanently alter the markup if saved.
+
+---
+
+
+### AddComment
+
+Adds a comment to the markup, retained when saved to file.
+markup.comments.length, sign, this.note[markup.markupnumber], timestamp
+
+- **Syntax**: `Markup.AddComment(id, signature, szComment, timestamp)`
+- **Parameters**:
+  - `id`: number, Comment id, normally the length of comments + 1.
+  - `signature`: string,  The name or user id creating the comment.
+  - `szComment`: string,  The comment string
+  - `timestamp`: JavaScript time object,  Date and time for when the comment was added.
+- **Returns**: None
+- **Usage Caution**: This can permanently alter the markup if saved.
+
+---
+
+---
+
+### deleteComment
+
+Adds a comment to the markup, retained when saved to file.
+markup.comments.length, sign, this.note[markup.markupnumber], timestamp
+
+- **Syntax**: `Markup.deleteComment(id)`
+- **Parameters**:
+  - `id`: number, Comment id used to identify the comment
+- **Returns**: None
+- **Usage Caution**: This can permanently alter the markup if saved.
+
+---
+
+
 
 ### ClearAttributes
 
@@ -270,3 +334,60 @@ Retrieves a JSON representation of the markup object.
 - **Parameters**:
   - `operation`: Object from the `GUI_Markup` event callback indicating if the markup was created, deleted, or modified
 - **Returns**: Promise containing JSON data
+
+---
+
+### setdisplay
+
+Turn the display of this markup object on/off
+
+- **Syntax**: 
+  ```javascript
+      Markup.setdisplay(onOff);
+  ``` 
+- **Parameters**:
+  - `onOff`: Boolean if true the markup is visible if false the markup is hidden.
+- **Returns**: None
+
+---
+
+### zoomTo
+
+Causes a zoom operation focusing on the markup object.
+
+- **Syntax**: 
+  ```javascript
+      let padding = {x : 30, y : 30, w : 150, h : 150};
+      Markup.zoomTo(padding);
+  ``` 
+- **Parameters**:
+  - `padding`:  object that indicate the space around the markup to set the zoom factor too.
+- **Returns**: None
+
+---
+
+### hidelabelmarkupobj
+
+Sets the hidevaluelabel property of the markup object to false. When false the label, if it has one, is not rendered.
+
+- **Syntax**: 
+  ```javascript
+      Markup.hidelabelmarkupobj();
+  ``` 
+- **Parameters**:
+  - None
+- **Returns**: None
+
+---
+
+### showlabelmarkupobj
+
+Sets the hidevaluelabel property of the markup object to true. When true the label, if it has one, is rendered.
+
+- **Syntax**: 
+  ```javascript
+      Markup.hidelabelmarkupobj();
+  ``` 
+- **Parameters**:
+  - None
+- **Returns**: None

@@ -1,7 +1,7 @@
 This callback event returns information about a vector entity, selected using the mouse,  when the [RxCore.getVectorEntity](../methods/getVectorEntity.md) tool is used in combination with [RxCore.blockhoverevent](../methods/blockhoverevent.md) turned on.
 
 ### Callback Parameters
-- `vectorinfo`: **object** — information about the selected vector entity. Block if part of a block, the vector layer, the Entity property is an object that can contain different information depending on the vector type.
+- `vectorinfo`: **object** — information about the selected vector entity. Block if part of a block, the vector layer, the [Entity](../../../introduction/vectorEntity.md) property is an object that can contain different information depending on the vector type.
 
 - `screenmouse`: **object** — The mouse coordinates of the mouse click.
 - `pathindex`: **number** — The vector index.
